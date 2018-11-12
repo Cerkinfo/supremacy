@@ -1,21 +1,32 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Font } from 'expo';
+import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'react-native';
+import { Container, Button, Text } from 'native-base';
+import { Main } from './screens';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      fontLoaded: false
+    };
+  }
+
+  async componentDidMount() {
+    await Expo.Font.loadAsync({
+      'Roboto': require('native-base/Fonts/Roboto.ttf'),
+      'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+    });
+
+    this.setState({ fontLoaded: true, });
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>skrtskrt</Text>
-      </View>
+      <Container>
+        { this.state.fontLoaded ? (<Main/>): (null) }
+      </Container>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
