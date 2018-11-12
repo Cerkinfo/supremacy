@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'react-native';
 import { Text } from 'native-base';
+import { Subscribe } from 'unstated';
+import { PositionContainer } from '../containers';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height
 const SCREEN_WIDTH = Dimensions.get('window').width
@@ -9,13 +11,11 @@ export default class _ extends React.Component {
   constructor(props) {
     super(props);
 
-    this.position = new Animated.ValueXY();
-
     this.state = {
       currentIndex: 0,
     };
 
-    this.rotate = this.position.x.interpolate({
+    this.rotate = this.props.position.x.interpolate({
       inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
       outputRange: ['-10deg', '0deg', '10deg'],
       extrapolate: 'clamp',
@@ -25,16 +25,16 @@ export default class _ extends React.Component {
       transform: [{
         rotate: this.rotate
       },
-      ...this.position.getTranslateTransform(),
+      ...this.props.position.getTranslateTransform(),
     ]};
 
-    this.rightSwipeOpacity = this.position.x.interpolate({
+    this.rightSwipeOpacity = this.props.position.x.interpolate({
       inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
       outputRange: [0, 0, 1],
       extrapolate: 'clamp',
     });
 
-    this.leftSwipeOpacity = this.position.x.interpolate({
+    this.leftSwipeOpacity = this.props.position.x.interpolate({
       inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
       outputRange: [1, 0, 0],
       extrapolate: 'clamp',
@@ -47,28 +47,28 @@ export default class _ extends React.Component {
       onStartShouldSetPanResponder: (evt, gestureState) => true,
 
       onPanResponderMove: (evt, gestureState) => {
-        this.position.setValue({ x: gestureState.dx, y: gestureState.dy })
+        this.props.position.setValue({ x: gestureState.dx, y: gestureState.dy })
       },
 
       onPanResponderRelease: (evt, gestureState) => {
         if (gestureState.dx > 120) {
-          Animated.spring(this.position, {
+          Animated.spring(this.props.position, {
             toValue: { x: SCREEN_WIDTH + 100, y: gestureState.dy }
           }).start(() => {
             this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
-              this.position.setValue({ x: 0, y: 0 })
+              this.props.position.setValue({ x: 0, y: 0 })
             })
           })
         } else if (gestureState.dx < -120) {
-          Animated.spring(this.position, {
+          Animated.spring(this.props.position, {
             toValue: { x: -SCREEN_WIDTH - 100, y: gestureState.dy }
           }).start(() => {
             this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
-              this.position.setValue({ x: 0, y: 0 })
+              this.props.position.setValue({ x: 0, y: 0 })
             })
           })
         } else {
-          Animated.spring(this.position, {
+          Animated.spring(this.props.position, {
             toValue: { x: 0, y: 0 },
             friction: 4
           }).start()
