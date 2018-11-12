@@ -47,13 +47,13 @@ export default class _ extends React.Component {
       onStartShouldSetPanResponder: (evt, gestureState) => true,
 
       onPanResponderMove: (evt, gestureState) => {
-        this.position.setValue({ x: gestureState.dx, y: gestureState.dy })
+        this.position.setValue({ x: gestureState.dx, y: 0 })
       },
 
       onPanResponderRelease: (evt, gestureState) => {
         if (gestureState.dx > 120) {
           Animated.spring(this.position, {
-            toValue: { x: SCREEN_WIDTH + 100, y: gestureState.dy }
+            toValue: { x: SCREEN_WIDTH + 100, y: 0 }
           }).start(() => {
             this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
               this.position.setValue({ x: 0, y: 0 })
@@ -61,7 +61,7 @@ export default class _ extends React.Component {
           })
         } else if (gestureState.dx < -120) {
           Animated.spring(this.position, {
-            toValue: { x: -SCREEN_WIDTH - 100, y: gestureState.dy }
+            toValue: { x: -SCREEN_WIDTH - 100, y: 0 }
           }).start(() => {
             this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
               this.position.setValue({ x: 0, y: 0 })

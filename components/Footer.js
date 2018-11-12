@@ -8,20 +8,32 @@ export default class _ extends React.Component {
       <Footer>
         <FooterTab>
           <Button vertical>
-            <Icon name="apps" />
-            <Text>Apps</Text>
+            <Image
+              style={{ flex: 1, height: 10, width: 25, tintColor: "white", opacity: 0.6 }}
+              source={require('../assets/img/logos/ace.png')}
+            />
+            <Text>ACE</Text>
           </Button>
           <Button vertical>
-            <Icon name="camera" />
-            <Text>Camera</Text>
+            <Image
+              style={{ flex: 1, height: 10, width: 25, tintColor: "white", opacity: 0.6 }}
+              source={require('../assets/img/logos/ulb.png')}
+            />
+            <Text>ULB</Text>
           </Button>
           <Button vertical>
-            <Icon active name="navigate" />
-            <Text>Navigate</Text>
+            <Image
+              style={{ flex: 1, height: 10, width: 25, tintColor: "white", opacity: 0.6 }}
+              source={require('../assets/img/logos/sponsor.png')}
+            />
+            <Text>sponsor</Text>
           </Button>
           <Button vertical>
-            <Icon name="person" />
-            <Text>Contact</Text>
+            <Image
+              style={{ flex: 1, height: 10, width: 25, tintColor: "white", opacity: 0.6 }}
+              source={require('../assets/img/logos/cercles.png')}
+            />
+            <Text>cercles</Text>
           </Button>
         </FooterTab>
       </Footer>
