@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'react-native';
+import { Text } from 'native-base';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height
 const SCREEN_WIDTH = Dimensions.get('window').width
@@ -9,9 +10,35 @@ export default class _ extends React.Component {
     super(props);
 
     this.position = new Animated.ValueXY();
+
     this.state = {
       currentIndex: 0,
     };
+
+    this.rotate = this.position.x.interpolate({
+      inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
+      outputRange: ['-10deg', '0deg', '10deg'],
+      extrapolate: 'clamp',
+    })
+
+    this.rotateAndTranslate = {
+      transform: [{
+        rotate: this.rotate
+      },
+      ...this.position.getTranslateTransform(),
+    ]};
+
+    this.rightSwipeOpacity = this.position.x.interpolate({
+      inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
+      outputRange: [0, 0, 1],
+      extrapolate: 'clamp',
+    });
+
+    this.leftSwipeOpacity = this.position.x.interpolate({
+      inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
+      outputRange: [1, 0, 0],
+      extrapolate: 'clamp',
+    });
   }
 
   componentWillMount() {
@@ -54,8 +81,14 @@ export default class _ extends React.Component {
     return (
       <Animated.View
         {...this.PanResponder.panHandlers}
-        style={{ transform: this.position.getTranslateTransform(), height: SCREEN_HEIGHT - 120, width: SCREEN_WIDTH, }}
+        style={[this.rotateAndTranslate, { height: SCREEN_HEIGHT - 120, width: SCREEN_WIDTH, }]}
       >
+        <Animated.View style={{ opacity: this.rightSwipeOpacity, position: 'absolute', top: 50, left: 40, zIndex: 1000}}>
+          <Text style={{ borderWidth: 1, borderColor: 'green', color: 'green', fontSize: 32, fontWeight: '800', padding: 10 }}>LIKE</Text>
+        </Animated.View>
+        <Animated.View style={{ opacity: this.leftSwipeOpacity, position: 'absolute', top: 50, right: 40, zIndex: 1000}}>
+          <Text style={{ borderWidth: 1, borderColor: 'red', color: 'red', fontSize: 32, fontWeight: '800', padding: 10 }}>DISLIKE</Text>
+        </Animated.View>
         {this.props.children}
       </Animated.View>
     );
