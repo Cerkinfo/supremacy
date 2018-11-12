@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "supremacy",
-    "description": "This project is really great.",
+    "description": "",
     "slug": "supremacy",
     "privacy": "public",
     "sdkVersion": "30.0.0",
@@ -13,6 +13,11 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+    },
+    "androidStatusBarColor": "#334393",
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#334393"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
