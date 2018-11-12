@@ -19,6 +19,8 @@ const ImgAssets = [
 export default class _ extends React.Component {
   constructor(props) {
     super(props);
+
+    this.position = new Animated.ValueXY();
   }
 
   render() {
@@ -26,7 +28,7 @@ export default class _ extends React.Component {
       <Container>
         <Header title={ImgAssets[0].title}/>
         <View style={{ flex: 1 }}>
-          <AnimatedView>
+          <AnimatedView position={this.position}>
             <Image
               style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 20 }}
               source={ImgAssets[0].uri}
