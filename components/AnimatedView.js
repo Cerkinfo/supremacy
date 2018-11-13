@@ -51,14 +51,17 @@ export default class _ extends React.Component {
           Animated.spring(this.props.position, {
             toValue: { x: SCREEN_WIDTH + 100, y: gestureState.dy }
           }).start(() => {
-            this.props.swipeLeftCallback(1);
+            this.props.stats.changeValue(this.props.story.state.story.stats[1]);
+            this.props.story.goNext();
             this.props.position.setValue({ x: 0, y: 0 });
+
           })
         } else if (gestureState.dx < -120) {
           Animated.spring(this.props.position, {
             toValue: { x: -SCREEN_WIDTH - 100, y: gestureState.dy }
           }).start(() => {
-            this.props.swipeLeftCallback(0);
+            this.props.stats.changeValue(this.props.story.state.story.stats[0]);
+            this.props.story.goNext();
             this.props.position.setValue({ x: 0, y: 0 });
           })
         } else {

@@ -10,7 +10,7 @@ export default class extends React.Component {
         {x => (
           <Image
             style={{ margin: 30, flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 2 }}
-            source={x.state.story.image}
+            source={x.state.story.uri}
           />
         )}
       </Subscribe>

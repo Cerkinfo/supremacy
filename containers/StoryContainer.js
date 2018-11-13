@@ -11,9 +11,10 @@ const StoryAssets = [
     left: "Non",
     right: "Oui",
     // 1er Swipe Left (refusé), 2eme Right (accepté)
-    stats:[
-        {ace:+1,ulb:+2,sponsors:+3,cercles:+4},
-        {ace:-1,ulb:-2,sponsors:-3,cercles:-4}]
+    stats: [
+      { ace: +1, ulb: +2, sponsors: +3, cercles: +4 },
+      { ace: -1, ulb: -2, sponsors: -3, cercles: -4 },
+    ]
 
   },
   {
@@ -37,7 +38,8 @@ export default class _ extends Container {
     story: {
       title: StoryAssets[0].title,
       description: StoryAssets[0].description,
-      image: StoryAssets[0].uri,
+      uri: StoryAssets[0].uri,
+      stats: StoryAssets[0].stats,
     },
     currentIndex: 0,
   };
@@ -49,6 +51,9 @@ export default class _ extends Container {
 
   goNext() {
     const newIndex = this.state.currentIndex + 1
-    this.setState({ currentIndex: newIndex,  story: {...StoryAssets[newIndex]} });
+    this.setState({
+      currentIndex: newIndex,
+      story: {...StoryAssets[newIndex]}
+    });
   }
 }

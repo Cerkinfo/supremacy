@@ -11,34 +11,6 @@ export default class _ extends React.Component {
     super(props);
 
     this.position = new Animated.ValueXY();
-    this.swipeLeftCallback = this.swipeLeftCallback.bind(this);
-    this.swipeRightCallback = this.swipeRightCallback.bind(this);
-  }
-
-  goNext(direction) {
-    React.createElement(
-      Subscribe,
-      { to: [StoryContainer, ] },
-      story => {
-        React.createElement(
-          Subscribe,
-          { to: [StatsContainer, ] },
-          stats => {
-            console.log("fjweoijfweoij");
-            stats.changeValue(story.state.story.stats[direction]);
-            story.goNext();
-          }
-        );
-      }
-    );
-  }
-
-  swipeLeftCallback() {
-    this.goNext(0);
-  }
-
-  swipeRightCallback() {
-    this.goNext(1);
   }
 
   render() {
@@ -47,9 +19,13 @@ export default class _ extends React.Component {
         <Header/>
         <StoryView style={{ flex: 1 }}/>
         <View style={{ flex: 1 }}>
-          <AnimatedView position={this.position} swipeLeftCallback={this.swipeLeftCallback} swipeRightCallback={this.swipeRightCallback}>
-            <StoryImageView style={{height: SCREEN_HEIGHT/3, width: SCREEN_WIDTH}}/>
-          </AnimatedView>
+          <Subscribe to={[StoryContainer, StatsContainer]}>
+            {(story, stats) => (
+              <AnimatedView story={story} stats={stats} position={this.position}>
+                <StoryImageView style={{height: SCREEN_HEIGHT/3, width: SCREEN_WIDTH}}/>
+              </AnimatedView>
+            )}
+          </Subscribe>
         </View>
         <Footer/>
       </Container>
