@@ -9,7 +9,13 @@ export default class extends React.Component {
       <Subscribe to={[StoryContainer]}>
         {x => (
           <Image
-            style={{ margin: 30, flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 2 }}
+            style={{
+              margin: 30,
+              flex: 1,
+              height: null,
+              width: null,
+              resizeMode: 'cover',
+              borderRadius: 10 }}
             source={x.state.story.uri}
           />
         )}
