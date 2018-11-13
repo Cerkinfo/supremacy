@@ -78,7 +78,7 @@ export default class _ extends React.Component {
     return (
       <Animated.View
         {...this.PanResponder.panHandlers}
-        style={[this.rotateAndTranslate, { height: SCREEN_HEIGHT - 120, width: SCREEN_WIDTH, }]}
+        style={[this.rotateAndTranslate, { top: 0, height: "100%", width: "90%", left: "5%", borderRadius: 15 }]}
       >
         <Animated.View style={{ opacity: this.rightSwipeOpacity, position: 'absolute', top: 50, left: 40, zIndex: 1000}}>
           <Text style={{ borderWidth: 1, borderColor: 'green', color: 'green', fontSize: 32, fontWeight: '800', padding: 10 }}>LIKE</Text>

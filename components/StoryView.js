@@ -11,7 +11,9 @@ export default class _StoryView extends React.Component {
       <Subscribe to={[StoryContainer]}>
         {x => (
           <View style={{
-            padding: 20,
+            paddingLeft: 20,
+            paddingRight: 20,
+            paddingTop: 10,
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: theme.SECONDARY_COLOR
