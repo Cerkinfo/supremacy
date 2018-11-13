@@ -5,6 +5,7 @@ import { Container, Text } from 'native-base';
 import { Subscribe } from 'unstated';
 import { StatsContainer, StoryContainer } from '../containers';
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../settings';
+import theme from '../style/theme.style'
 
 export default class _ extends React.Component {
   constructor(props) {
@@ -16,9 +17,9 @@ export default class _ extends React.Component {
   render() {
     return (
       <Container>
-        <Header/>
+        <Footer/>
         <StoryView style={{ flex: 1 }}/>
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: theme.SECONDARY_COLOR }}>
           <Subscribe to={[StoryContainer, StatsContainer]}>
             {(story, stats) => (
               <AnimatedView story={story} stats={stats} position={this.position}>
@@ -27,7 +28,7 @@ export default class _ extends React.Component {
             )}
           </Subscribe>
         </View>
-        <Footer/>
+        <Header/>
       </Container>
     );
   }

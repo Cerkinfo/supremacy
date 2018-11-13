@@ -1,0 +1,5 @@
+export default {
+  PRIMARY_COLOR: '#231402',
+  SECONDARY_COLOR: '#BDA867',
+  HIGHLIGHT_COLOR: '#F8F5BF'
+};
