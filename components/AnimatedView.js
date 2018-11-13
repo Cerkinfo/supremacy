@@ -1,11 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'react-native';
+import { StyleSheet, View, Image, Animated, PanResponder } from 'react-native';
+import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../settings'
 import { Text } from 'native-base';
-import { Subscribe } from 'unstated';
-import { PositionContainer } from '../containers';
-
-const SCREEN_HEIGHT = Dimensions.get('window').height
-const SCREEN_WIDTH = Dimensions.get('window').width
 
 export default class _ extends React.Component {
   constructor(props) {
@@ -55,17 +51,18 @@ export default class _ extends React.Component {
           Animated.spring(this.props.position, {
             toValue: { x: SCREEN_WIDTH + 100, y: 0 }
           }).start(() => {
-            this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
-              this.props.position.setValue({ x: 0, y: 0 })
-            })
+            this.props.stats.changeValue(this.props.story.state.story.stats[1]);
+            this.props.story.goNext();
+            this.props.position.setValue({ x: 0, y: 0 });
+
           })
         } else if (gestureState.dx < -120) {
           Animated.spring(this.props.position, {
             toValue: { x: -SCREEN_WIDTH - 100, y: 0 }
           }).start(() => {
-            this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
-              this.props.position.setValue({ x: 0, y: 0 })
-            })
+            this.props.stats.changeValue(this.props.story.state.story.stats[0]);
+            this.props.story.goNext();
+            this.props.position.setValue({ x: 0, y: 0 });
           })
         } else {
           Animated.spring(this.props.position, {
