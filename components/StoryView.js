@@ -16,9 +16,9 @@ export default class _StoryView extends React.Component {
             paddingTop: 10,
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: theme.SECONDARY_COLOR
+            backgroundColor: theme.SECONDARY_COLOR,
           }}>
-            <Text style={{textAlign: "center"}}>
+            <Text style={{textAlign: "center", fontFamily: 'Retron2000', fontSize: 14}}>
               {x.state.story.description}
             </Text>
           </View>

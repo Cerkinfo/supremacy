@@ -16,10 +16,10 @@ export default class _ extends React.Component {
         {x => (
           <Text style={{
             textAlign: "center",
-            fontSize: 20,
             fontSize: 25,
             backgroundColor: theme.SECONDARY_COLOR,
-            paddingBottom: 15
+            paddingBottom: 15,
+            fontFamily: 'Retron2000',
           }}>
             {x.state.story.title}
           </Text>
