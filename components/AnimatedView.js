@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Image, Animated, PanResponder } from 'react-native';
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../settings'
 import { Text } from 'native-base';
-import resolveAssetSource from 'resolveAssetSource';
+import theme from '../style/theme.style'
 
 export default class _ extends React.Component {
   constructor(props) {
@@ -84,7 +84,7 @@ export default class _ extends React.Component {
           height: "95%",
           width: "80%",
           left: "10%",
-          backgroundColor: "#2a2911",
+          backgroundColor: theme.BACKGROUND_COLOR,
           borderRadius: 10,
         }}>
           <Image
@@ -94,7 +94,7 @@ export default class _ extends React.Component {
               height: undefined,
               width: undefined,
               margin: "10%",
-              tintColor: "#7F6D4E"
+              tintColor: theme.DISABLED_COLOR
             }}
               resizeMode="center" />
         </View>
