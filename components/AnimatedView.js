@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Image, Animated, PanResponder } from 'react-native';
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../settings'
 import { Text } from 'native-base';
+import resolveAssetSource from 'resolveAssetSource';
 
 export default class _ extends React.Component {
   constructor(props) {
@@ -76,18 +77,39 @@ export default class _ extends React.Component {
 
   render() {
     return (
-      <Animated.View
-        {...this.PanResponder.panHandlers}
-        style={[this.rotateAndTranslate, { top: 0, height: "100%", width: "90%", left: "5%" }]}
-      >
-        <Animated.View style={{ opacity: this.rightSwipeOpacity, position: 'absolute', top: 50, left: 40, zIndex: 1000}}>
-          <Text style={{ borderWidth: 1, borderColor: 'green', color: 'green', fontSize: 32, fontWeight: '800', padding: 10 }}>LIKE</Text>
+      <View>
+        <View style={{
+          position: "absolute",
+          top: "5%",
+          height: "95%",
+          width: "80%",
+          left: "10%",
+          backgroundColor: "#2a2911",
+          borderRadius: 10,
+        }}>
+          <Image
+            source={require('../assets/img/logos/sceau.png')}
+            style={{
+              flex: 1,
+              height: undefined,
+              width: undefined,
+              margin: "10%",
+              tintColor: "#7F6D4E"
+            }}
+              resizeMode="center" />
+        </View>
+        <Animated.View
+            {...this.PanResponder.panHandlers}
+            style={[this.rotateAndTranslate, { top: "5%", height: "95%", width: "80%", left: "10%" }]}>
+            <Animated.View style={{ opacity: this.rightSwipeOpacity, position: 'absolute', top: 50, left: 40, zIndex: 1000}}>
+              <Text style={{ borderWidth: 1, borderColor: 'green', color: 'green', fontSize: 32, fontWeight: '800', padding: 10 }}>LIKE</Text>
+            </Animated.View>
+            <Animated.View style={{ opacity: this.leftSwipeOpacity, position: 'absolute', top: 50, right: 40, zIndex: 1000}}>
+              <Text style={{ borderWidth: 1, borderColor: 'red', color: 'red', fontSize: 32, fontWeight: '800', padding: 10 }}>DISLIKE</Text>
+            </Animated.View>
+            {this.props.children}
         </Animated.View>
-        <Animated.View style={{ opacity: this.leftSwipeOpacity, position: 'absolute', top: 50, right: 40, zIndex: 1000}}>
-          <Text style={{ borderWidth: 1, borderColor: 'red', color: 'red', fontSize: 32, fontWeight: '800', padding: 10 }}>DISLIKE</Text>
-        </Animated.View>
-        {this.props.children}
-      </Animated.View>
+      </View>
     );
   }
 }

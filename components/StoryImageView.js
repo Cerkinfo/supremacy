@@ -10,7 +10,6 @@ export default class extends React.Component {
         {x => (
           <Image
             style={{
-              margin: 30,
               flex: 1,
               height: null,
               width: null,
