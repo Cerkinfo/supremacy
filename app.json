@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "supremacy",
-    "description": "",
+    "description": "Un jeu qui te met dans la peau d'un délégué de l'ACE le temps d'un swipe",
     "slug": "supremacy",
     "privacy": "public",
     "sdkVersion": "30.0.0",
@@ -10,14 +10,12 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "androidStatusBarColor": "#334393",
     "androidStatusBar": {
-      "barStyle": "light-content",
-      "backgroundColor": "#334393"
+      "backgroundColor": "#231402"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
