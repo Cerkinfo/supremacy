@@ -67,7 +67,7 @@ const slides = [
     key: '2',
     title: 'Comment jouer ?',
     text: 'C\'est simple, vous avez déjà utilisé Tinder ? Le principe est le même des images arrivent à l\'écran et c\'est à vous de décidé si vous l\'acceptez ou refusez en swipant vers la gauche ou la droite.',
-    image: require('../assets/img/story/2.jpg'),
+    image: require('../assets/img/intro/swipe.png'),
     imageStyle: styles.image,
     backgroundColor: '#febe29',
     colors: ['#63E2FF', '#B066FE'],
