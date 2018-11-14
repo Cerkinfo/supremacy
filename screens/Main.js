@@ -17,7 +17,7 @@ export default class _ extends React.Component {
   render() {
     return (
       <Container>
-        <Footer/>
+        <Header/>
         <StoryView style={{ flex: 1 }}/>
         <View style={{ flex: 1, backgroundColor: theme.SECONDARY_COLOR }}>
           <Subscribe to={[StoryContainer, StatsContainer]}>
@@ -28,7 +28,7 @@ export default class _ extends React.Component {
             )}
           </Subscribe>
         </View>
-        <Header/>
+        <Footer/>
       </Container>
     );
   }
