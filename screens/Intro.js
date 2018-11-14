@@ -1,10 +1,11 @@
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Text, Image, Grid, Col } from 'react-native';
 import { LinearGradient } from 'expo';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { Subscribe } from 'unstated';
 import { AppStateContainer } from '../containers';
+import { SCREEN_WIDTH } from '../settings';
 
 const styles = StyleSheet.create({
   mainContent: {
@@ -19,6 +20,20 @@ const styles = StyleSheet.create({
     height: undefined,
     resizeMode: 'center',
     borderRadius: 10,
+  },
+  icon: {
+    left: 25,
+    width: 30,
+    height: 30,
+    resizeMode: 'center',
+    tintColor: 'white',
+  },
+  line: {
+    color: 'rgba(255, 255, 255, 0.8)',
+    width: (3 * SCREEN_WIDTH) / 5,
+    backgroundColor: 'transparent',
+    fontFamily: 'Retron2000',
+    left: 40,
   },
   text: {
     color: 'rgba(255, 255, 255, 0.8)',
@@ -61,36 +76,86 @@ const slides = [
     key: '3',
     title: 'Les décisions ...',
     text: 'Chacune de vos décisions va influencer l\'avis que des acteurs ont sur vous. À vous d\'essayer d\'avoir le meilleurs score pour chaque parties.',
-    image: require('../assets/img/story/3.jpg'),
+    list: [
+      { id: 1, text: 'Ce logo représente l\'avis qu\'a le comité ACE de vous', image: require('../assets/img/logos/ace.png'), },
+      { id: 2, text: 'Celui ci représente le taux de satisfaction de l\'ULB par apport à vos actions.', image: require('../assets/img/logos/ulb.png'), },
+      { id: 3, text: 'Les entreprises privées, elles aussi, doivent aussi être satisfaites par les actions que vous prenez', image: require('../assets/img/logos/sponsor.png'), },
+      { id: 4, text: 'Le plus important est l\'avis qu\'on les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
+    ],
     imageStyle: styles.image,
     backgroundColor: '#22bcb5',
     colors: ['#63E2FF', '#B066FE'],
   }
 ];
 
+const Entry = ({text, image}) => (
+  <View style={{ flex: 1, flexDirection: 'row'}}>
+    <Image
+      style={styles.icon}
+      source={image}
+    />
+    <Text style={styles.line}>{text}</Text>
+  </View>
+);
+
+// const Entry = ({text, image}) => (
+//   <Grid>
+//     <Col style={{ }}>
+//       <Image
+//         style={styles.image}
+//         source={image}
+//       />
+//     </Col>
+//     <Col style={{ }}>
+//       <Text>{text}</Text>
+//     </Col>
+//   </Grid>
+// );
+
 export default class App extends React.Component {
   _renderItem(props) {
-    return (
-      <LinearGradient
-        style={[styles.mainContent, {
-          paddingTop: props.topSpacer,
-          paddingBottom: props.bottomSpacer,
-          width: props.width,
-          height: props.height,
-        }]}
-        colors={props.colors}
-        start={{x: 0, y: .1}} end={{x: .1, y: 1}}
-      >
-        <View>
-          <Text style={styles.title}>{props.title}</Text>
-          <Image
-            style={styles.image}
-            source={props.image}
-          />
-          <Text style={styles.text}>{props.text}</Text>
-        </View>
-      </LinearGradient>
-    );
+    if (props.list && props.list.length) {
+      return (
+        <LinearGradient
+          style={[styles.mainContent, {
+            paddingTop: props.topSpacer,
+            paddingBottom: props.bottomSpacer,
+            width: props.width,
+            height: props.height,
+          }]}
+          colors={props.colors}
+          start={{x: 0, y: .1}} end={{x: .1, y: 1}}
+        >
+          <View>
+            <Text style={styles.title}>{props.title}</Text>
+            <Text style={styles.text}>{props.text}</Text>
+            { props.list.map(x => <Entry key={x.id} {...x} />) }
+          </View>
+        </LinearGradient>
+      );
+    } else {
+      return (
+        <LinearGradient
+          style={[styles.mainContent, {
+            paddingTop: props.topSpacer,
+            paddingBottom: props.bottomSpacer,
+            width: props.width,
+            height: props.height,
+          }]}
+          colors={props.colors}
+          start={{x: 0, y: .1}} end={{x: .1, y: 1}}
+        >
+          <View>
+            <Text style={styles.title}>{props.title}</Text>
+            <Image
+              style={styles.image}
+              source={props.image}
+            />
+            <Text style={styles.text}>{props.text}</Text>
+          </View>
+        </LinearGradient>
+      );
+    }
   }
 
   render() {
