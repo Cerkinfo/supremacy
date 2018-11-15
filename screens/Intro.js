@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     width: undefined,
     height: undefined,
     resizeMode: 'center',
-    borderRadius: 10,
+    borderRadius: 30,
   },
   icon: {
     left: 25,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 const slides = [
   {
     key: '1',
-    title: 'Supremacy !',
+    title: 'Qu\'est ce que c\'est ?',
     text: 'Supremacy est le jeu qui vous met dans la peau d\'un délégué de l\'ACE le long d\'une partie',
     image: require('../assets/img/intro/cheers.png'),
     icon: 'ios-images-outline',
