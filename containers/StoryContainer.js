@@ -26,12 +26,12 @@ const StoryAssets = [
     description: "Bonjour nouveau prez ! Fraichement élu par l'AG car personne ne veut se présenter à ce poste et tout les anciens ont déserté le comité, tu dois faire la première décision de ton mandat. Que faire ce soir ?",
     left: {
       text: "Gauguin",
-      stats: { ace: +15, ulb: +0, sponsors: +0, cercles: +15 },
+      stats: { ace: +15, ulb: -5, sponsors: -5, cercles: +15 },
       next: 2,
     },
     right: {
       text: "Dormir",
-      stats: { ace: -10, ulb: -0, sponsors: -0, cercles: -15 },
+      stats: { ace: -10, ulb: +5, sponsors: -0, cercles: -15 },
       next: 2,
     },
   },
@@ -58,12 +58,12 @@ const StoryAssets = [
     description: "Tu prends tes marques sur le groupe facebook, tu essayes de marquer le coup directement en organisant une première rencontre avec les autres présidents pour créer une fausse cohésion de groupe. Que faire ? Bière ou pizza ?",
     left: {
       text: "Bière",
-      stats: { ace: 0, ulb: +0, sponsors: +0, cercles: +9 },
+      stats: { ace: +2, ulb: +0, sponsors: +0, cercles: +9 },
       next: 4,
     },
     right: {
       text: "Pizza",
-      stats: { ace: 0, ulb: -0, sponsors: -0, cercles: +7 },
+      stats: { ace: -5, ulb: -0, sponsors: -0, cercles: +7 },
       next: 4,
     },
   },
@@ -74,12 +74,28 @@ const StoryAssets = [
     description: "Toujours dans l'optique d'avoir une bonne cohésion au seins du groupe des présidents, tu te fixes comme objectif de commander les pulls prez au plus tôt. Tu décides de faire le design, mais tu fais un dessins qui inclut tout le monde ou qui te met en avant ?",
     left: {
       text: "Me mettre en avant",
-      stats: { ace: 0, ulb: +0, sponsors: +0, cercles: +0 },
+      stats: { ace: +2, ulb: +8, sponsors: +10, cercles: -15 },
       next: 5,
     },
     right: {
       text: "Inclusif",
-      stats: { ace: 0, ulb: -0, sponsors: -0, cercles: -5 },
+      stats: { ace: +3, ulb: -4, sponsors: -2, cercles: +10 },
+      next: 5,
+    },
+  },
+  {
+    id: 5,
+    uri: require('../assets/img/story/5.png'),
+    title: "TD Sectarisé ?",
+    description: "Première réunion, déjà les premières décision à prendre concernant le baptême, il faut négocier avec l'ULB pour trouver un endroit où faire les baptêmes. Où le faire ?",
+    left: {
+      text: "JEFKE",
+      stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
+      next: 5,
+    },
+    right: {
+      text: "JEFKE",
+      stats: { ace: +5, ulb: +10, sponsors: -0, cercles: -20 },
       next: 5,
     },
   },
@@ -108,6 +124,13 @@ export default class _ extends Container {
     this.setState({
       currentIndex: newIndex,
       story: {...StoryAssets[newIndex]}
+    });
+  }
+
+  set(index) {
+    this.setState({
+      currentIndex: index,
+      story: {...StoryAssets[index]}
     });
   }
 }
