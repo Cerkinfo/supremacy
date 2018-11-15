@@ -6,6 +6,7 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 import { Subscribe } from 'unstated';
 import { AppStateContainer } from '../containers';
 import { SCREEN_WIDTH } from '../settings';
+import theme from '../style/theme.style'
 
 const styles = StyleSheet.create({
   mainContent: {
@@ -60,14 +61,14 @@ const slides = [
     text: 'Supremacy est le jeu qui vous met dans la peau d\'un délégué de l\'ACE le long d\'une partie',
     image: require('../assets/img/intro/cheers.png'),
     icon: 'ios-images-outline',
-    colors: ['#231402', '#7F6D4E'],
+    colors: [theme.PRIMARY_COLOR, theme.DISABLED_COLOR],
   },
   {
     key: '2',
     title: 'Comment jouer ?',
     text: 'C\'est simple, vous avez déjà utilisé Tinder ? Le principe est le même des images arrivent à l\'écran et c\'est à vous de décidé si vous l\'acceptez ou refusez en swipant vers la gauche ou la droite.',
     image: require('../assets/img/intro/swipe.png'),
-    colors: ['#7F6D4E', '#231402'],
+    colors: [theme.DISABLED_COLOR, theme.PRIMARY_COLOR],
   },
   {
     key: '3',
@@ -79,7 +80,7 @@ const slides = [
       { id: 3, text: 'Les entreprises privées, elles aussi, doivent aussi être satisfaites par les actions que vous prenez', image: require('../assets/img/logos/sponsor.png'), },
       { id: 4, text: 'Le plus important est l\'avis qu\'on les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
     ],
-    colors: ['#231402', '#7F6D4E'],
+    colors: [theme.PRIMARY_COLOR, theme.DISABLED_COLOR],
   }
 ];
 
