@@ -57,7 +57,16 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 16,
     fontFamily: 'Retron2000'
-  }
+  },
+  subtext: {
+    color: 'rgba(255, 255, 255, 0.8)',
+    backgroundColor: 'transparent',
+    textAlign: 'center',
+    paddingHorizontal: 8,
+    marginBottom: 8,
+    fontSize: 8,
+    fontFamily: 'Retron2000'
+  },
 });
 
 export default class _ extends React.Component {
@@ -69,7 +78,7 @@ export default class _ extends React.Component {
             <View style={styles.topContainer}>
               <Text style={styles.title}>Supremacy</Text>
               <Text style={styles.text}>
-                {"Dans la peau de l'ACE juqu'au bout des doigts."}
+                {"Dans la peau de l'ACE (l'Association des Capitaliste Extrêmiste) juqu'au bout des doigts."}
               </Text>
             </View>
             <View style={styles.middleContainer}>
@@ -82,6 +91,9 @@ export default class _ extends React.Component {
               >
                 <Text style={{fontFamily: 'Retron2000', color: 'black'}}>Jouer</Text>
               </Button>
+              <Text style={styles.subtext}>
+                {"Toute ressemblance avec des personnes existantes ou ayant existé est purement fortuite."}
+              </Text>
             </View>
           </View>
         )}
