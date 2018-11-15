@@ -190,12 +190,12 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Subscribe to={[AppStateContainer]}>
-        {state => (
+      <Subscribe to={[AppStateContainer, StoryContainer]}>
+        {(state, story) => (
           <AppIntroSlider
             slides={slides}
             renderItem={this._renderItem}
-            onSkip={() => state.switchToApp()}
+            onSkip={() => {story.set(1); state.switchToApp()}}
             nextLabel="Suivant"
             skipLabel="Passer"
             showSkipButton
