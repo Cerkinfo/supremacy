@@ -4,7 +4,7 @@ import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'rea
 import { Container, Button, Text } from 'native-base';
 import { Provider, Subscribe } from 'unstated';
 import { AppStateContainer } from './containers';
-import { Intro, Main } from './screens';
+import { LandingPage, Intro, Main } from './screens';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -35,7 +35,9 @@ export default class App extends React.Component {
                 this.state.fontLoaded
                   ? state.state.intro
                     ? <Intro/>
-                    : <Main/>
+                    : state.state.index
+                      ? <LandingPage/>
+                      : <Main/>
                   : <AppLoading/>
               }
             </Container>
