@@ -11,8 +11,8 @@ const StoryAssets = [
     left: "Gauguin",
     right: "Dormir",
     stats: [
-      { ace: +15, ulb: +0, sponsors: +0, cercles: +20 },
-      { ace: -10, ulb: -0, sponsors: -0, cercles: -5 },
+      { ace: +15, ulb: +0, sponsors: +0, cercles: +15 },
+      { ace: -10, ulb: -0, sponsors: -0, cercles: -15 },
     ]
   },
   {
@@ -23,8 +23,32 @@ const StoryAssets = [
     left: "Autoluigis",
     right: "C'est mort",
     stats: [
-      { ace: -5, ulb: +0, sponsors: +0, cercles: +30 },
+      { ace: -5, ulb: +0, sponsors: +0, cercles: +20 },
       { ace: -5, ulb: -0, sponsors: -0, cercles: -5 },
+    ]
+  },
+  {
+    id: 3,
+    uri: require('../assets/img/story/3.png'),
+    title: 'Premiers pas ...',
+    description: "Tu prends tes marques sur le groupe facebook, tu essayes de marquer le coup directement en organisant une première rencontre avec les autres présidents pour créer une fausse cohésion de groupe. Que faire ? Bière ou pizza ?",
+    left: "Bière",
+    right: "Pizza",
+    stats: [
+      { ace: 0, ulb: +0, sponsors: +0, cercles: +9 },
+      { ace: 0, ulb: -0, sponsors: -0, cercles: +7 },
+    ]
+  },
+  {
+    id: 4,
+    uri: require('../assets/img/story/4.png'),
+    title: 'Pull prez ...',
+    description: "Toujours dans l'optique d'avoir une bonne cohésion au seins du groupe des présidents, tu te fixes comme objectif de commander les pulls prez au plus tôt. Tu décides de faire le design, mais tu fais un dessins qui inclut tout le monde ou qui te met en avant ?",
+    left: "Me mettre en avant",
+    right: "Inclusif",
+    stats: [
+      { ace: 0, ulb: +0, sponsors: +0, cercles: +2 },
+      { ace: 0, ulb: -0, sponsors: -0, cercles: -5 },
     ]
   },
   {
