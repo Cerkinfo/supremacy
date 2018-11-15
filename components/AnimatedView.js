@@ -26,13 +26,13 @@ export default class _ extends React.Component {
     ]};
 
     this.rightSwipeOpacity = this.props.position.x.interpolate({
-      inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
+      inputRange: [-SCREEN_WIDTH / 4, 0, SCREEN_WIDTH / 4],
       outputRange: [0, 0, 1],
       extrapolate: 'clamp',
     });
 
     this.leftSwipeOpacity = this.props.position.x.interpolate({
-      inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
+      inputRange: [-SCREEN_WIDTH / 4, 0, SCREEN_WIDTH / 4],
       outputRange: [1, 0, 0],
       extrapolate: 'clamp',
     });
