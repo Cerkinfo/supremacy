@@ -102,10 +102,14 @@ export default class _ extends React.Component {
             {...this.PanResponder.panHandlers}
             style={[this.rotateAndTranslate, { top: "5%", height: "95%", width: "80%", left: "10%" }]}>
             <Animated.View style={{ opacity: this.rightSwipeOpacity, position: 'absolute', top: 50, left: 40, zIndex: 1000}}>
-              <Text style={{ borderWidth: 1, borderColor: 'green', color: 'green', fontSize: 32, fontWeight: '800', padding: 10 }}>LIKE</Text>
+              <Text style={{ borderWidth: 1, borderColor: theme.SECONDARY_COLOR, color: theme.SECONDARY_COLOR, fontSize: 32, fontWeight: '800', padding: 10 }}>
+                {this.props.story.state.story.right ? this.props.story.state.story.right : "Non"}
+              </Text>
             </Animated.View>
             <Animated.View style={{ opacity: this.leftSwipeOpacity, position: 'absolute', top: 50, right: 40, zIndex: 1000}}>
-              <Text style={{ borderWidth: 1, borderColor: 'red', color: 'red', fontSize: 32, fontWeight: '800', padding: 10 }}>DISLIKE</Text>
+              <Text style={{ borderWidth: 1, borderColor: theme.SECONDARY_COLOR, color: theme.SECONDARY_COLOR, fontSize: 32, fontWeight: '800', padding: 10 }}>
+                {this.props.story.state.story.left ? this.props.story.state.story.left: "Oui"}
+              </Text>
             </Animated.View>
             {this.props.children}
         </Animated.View>
