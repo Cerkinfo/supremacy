@@ -77,8 +77,8 @@ const slides = [
     list: [
       { id: 1, text: 'Ce logo représente l\'avis qu\'a le comité ACE de vous', image: require('../assets/img/logos/ace.png'), },
       { id: 2, text: 'Celui ci représente le taux de satisfaction de l\'ULB par apport à vos actions.', image: require('../assets/img/logos/ulb.png'), },
-      { id: 3, text: 'Les entreprises privées, elles aussi, doivent aussi être satisfaites par les actions que vous prenez', image: require('../assets/img/logos/sponsor.png'), },
-      { id: 4, text: 'Le plus important est l\'avis qu\'on les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
+      { id: 3, text: 'Les entreprises privées et sponsors, elles aussi, doivent aussi être satisfaites par les actions que vous prenez', image: require('../assets/img/logos/sponsor.png'), },
+      { id: 4, text: 'Le plus important est l\'avis qu\'ont les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
     ],
     colors: [theme.PRIMARY_COLOR, theme.DISABLED_COLOR],
   }
