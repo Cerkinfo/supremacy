@@ -1,11 +1,12 @@
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
-import { StyleSheet, View, Text, Image, Grid, Col } from 'react-native';
+import { StyleSheet, View, Text, Image, Animated } from 'react-native';
 import { LinearGradient } from 'expo';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { Subscribe } from 'unstated';
-import { AppStateContainer } from '../containers';
-import { SCREEN_WIDTH } from '../settings';
+import { AnimatedView, StoryImageView } from '../components';
+import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../settings';
+import { AppStateContainer, StatsContainer, StoryContainer } from '../containers';
 import theme from '../style/theme.style'
 
 const styles = StyleSheet.create({
@@ -66,7 +67,7 @@ const slides = [
   {
     key: '2',
     title: 'Comment jouer ?',
-    text: 'C\'est simple, vous avez déjà utilisé Tinder ? Le principe est le même des images arrivent à l\'écran et c\'est à vous de décidé si vous l\'acceptez ou refusez en swipant vers la gauche ou la droite.',
+    text: 'C\'est simple, vous avez déjà utilisé Tinder ? Le principe est le même des images arrivent à l\'écran et c\'est à vous de prendre une décision en swipant vers la gauche ou la droite (les propositions apparaissent au moment de swiper).',
     image: require('../assets/img/intro/swipe.png'),
     colors: [theme.DISABLED_COLOR, theme.PRIMARY_COLOR],
   },
@@ -81,6 +82,13 @@ const slides = [
       { id: 4, text: 'Le plus important est l\'avis qu\'ont les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
     ],
     colors: [theme.PRIMARY_COLOR, theme.DISABLED_COLOR],
+  },
+  {
+    key: '4',
+    title: 'Alors prêt à jouer ?',
+    text: 'Commence la partie en swipant l\'image',
+    colors: [theme.DISABLED_COLOR, theme.PRIMARY_COLOR],
+    swipe: true,
   }
 ];
 
@@ -94,21 +102,14 @@ const Entry = ({text, image}) => (
   </View>
 );
 
-// const Entry = ({text, image}) => (
-//   <Grid>
-//     <Col style={{ }}>
-//       <Image
-//         style={styles.image}
-//         source={image}
-//       />
-//     </Col>
-//     <Col style={{ }}>
-//       <Text>{text}</Text>
-//     </Col>
-//   </Grid>
-// );
-
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.position = new Animated.ValueXY();
+    this._renderItem = this._renderItem.bind(this);
+  }
+
   _renderItem(props) {
     if (props.list && props.list.length) {
       return (
@@ -127,6 +128,34 @@ export default class App extends React.Component {
             <Text style={styles.text}>{props.text}</Text>
             { props.list.map(x => <Entry key={x.id} {...x} />) }
           </View>
+        </LinearGradient>
+      );
+    } else if (props.swipe) {
+      return (
+        <LinearGradient
+          style={[styles.mainContent, {
+            paddingTop: props.topSpacer,
+            paddingBottom: props.bottomSpacer,
+            width: props.width,
+            height: props.height,
+          }]}
+          colors={props.colors}
+          start={{x: 0, y: .1}} end={{x: .1, y: 1}}
+        >
+          <Subscribe to={[StoryContainer, StatsContainer, AppStateContainer]}>
+            {(story, stats, state) => (
+              <View>
+                <Text style={styles.title}>{props.title}</Text>
+                <AnimatedView swipeCallback={dir => (dir == 'left' ? state.switchToApp() : null)} story={story} stats={stats} position={this.position}>
+                  <Image
+                    style={styles.image}
+                    source={story.state.story.uri}
+                  />
+                </AnimatedView>
+                <Text style={styles.text}>{props.text}</Text>
+              </View>
+            )}
+          </Subscribe>
         </LinearGradient>
       );
     } else {
@@ -161,11 +190,11 @@ export default class App extends React.Component {
           <AppIntroSlider
             slides={slides}
             renderItem={this._renderItem}
-            onDone={() => state.switchToApp()}
             onSkip={() => state.switchToApp()}
             nextLabel="Suivant"
             skipLabel="Passer"
             showSkipButton
+            hideDoneButton
           />
         )}
       </Subscribe>
