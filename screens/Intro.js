@@ -16,12 +16,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   image: {
-    margin: 30,
     flex: 1,
     width: undefined,
     height: undefined,
-    resizeMode: 'center',
-    borderRadius: 30,
+    borderRadius: 10,
   },
   icon: {
     left: 25,
@@ -144,14 +142,20 @@ export default class App extends React.Component {
         >
           <Subscribe to={[StoryContainer, StatsContainer, AppStateContainer]}>
             {(story, stats, state) => (
-              <View>
+              <View style={{height:"100%"}}>
                 <Text style={styles.title}>{props.title}</Text>
-                <AnimatedView swipeCallback={dir => (dir == 'left' ? state.switchToApp() : null)} story={story} stats={stats} position={this.position}>
-                  <Image
-                    style={styles.image}
-                    source={story.state.story.uri}
-                  />
-                </AnimatedView>
+                <View style={{height:"80%"}}>
+                  <AnimatedView
+                    swipeCallback={dir => (dir == 'left' ? state.switchToApp() : null)}
+                    story={story}
+                    stats={stats}
+                    position={this.position}>
+                    <Image
+                      style={styles.image}
+                      source={story.state.story.uri}
+                    />
+                  </AnimatedView>
+                </View>
                 <Text style={styles.text}>{props.text}</Text>
               </View>
             )}
@@ -175,6 +179,7 @@ export default class App extends React.Component {
             <Image
               style={styles.image}
               source={props.image}
+              resizeMode='center'
             />
             <Text style={styles.text}>{props.text}</Text>
           </View>
