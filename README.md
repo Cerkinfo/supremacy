@@ -1,4 +1,4 @@
-# supremacy
+# Supremacy :crown:
 Une application qui imite le jeu "Reigns" visant à simuler la vie d'un délégué ACE
 
 # Set up
