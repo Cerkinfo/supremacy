@@ -69,29 +69,31 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class _ extends React.Component {
-  render() {
-    return (
-      <Subscribe to={[AppStateContainer]}>
-        {state => (
-          <View style={styles.container}>
-            <View style={styles.topContainer}>
-              <Text style={styles.title}>Supremacy</Text>
-            </View>
-            <View style={styles.middleContainer}>
-              <Image source={require('../assets/img/penne.png')} style={styles.image} />
-            </View>
-            <View style={styles.bottomContainer}>
-              <Button block
-                style={styles.button}
-                onPress={() => state.switchToIntro()}
-              >
-                <Text style={{fontFamily: 'Retron2000', color: 'black'}}>Recommencer</Text>
-              </Button>
-            </View>
-          </View>
-        )}
-      </Subscribe>
-    );
-  }
-}
+export default ({ title, subtitle, image, buttonText, buttonCallback, subButtonTitle }) => (
+  <Subscribe to={[AppStateContainer]}>
+    {state => (
+      <View style={styles.container}>
+        <View style={styles.topContainer}>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.text}>
+            {subtitle}
+          </Text>
+        </View>
+        <View style={styles.middleContainer}>
+          <Image source={image} style={styles.image} />
+        </View>
+        <View style={styles.bottomContainer}>
+          <Button block
+            style={styles.button}
+            onPress={buttonCallback}
+          >
+            <Text style={{fontFamily: 'Retron2000', color: 'black'}}>{buttonText}</Text>
+          </Button>
+          <Text style={styles.subtext}>
+            {subButtonTitle}
+          </Text>
+        </View>
+      </View>
+    )}
+  </Subscribe>
+);

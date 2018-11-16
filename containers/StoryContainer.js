@@ -101,19 +101,20 @@ const StoryAssets = [
   },
 ];
 
+const DEFAULT = {
+  story: {
+    title: StoryAssets[0].title,
+    description: StoryAssets[0].description,
+    uri: StoryAssets[0].uri,
+    left: StoryAssets[0].left,
+    right: StoryAssets[0].right,
+    stats: StoryAssets[0].stats,
+  },
+  currentIndex: 0,
+};
 
 export default class _ extends Container {
-  state = {
-    story: {
-      title: StoryAssets[0].title,
-      description: StoryAssets[0].description,
-      uri: StoryAssets[0].uri,
-      left: StoryAssets[0].left,
-      right: StoryAssets[0].right,
-      stats: StoryAssets[0].stats,
-    },
-    currentIndex: 0,
-  };
+  state = DEFAULT;
 
   isLast() {
     return (this.state.currentIndex + 1) == StoryAssets.length;
@@ -132,5 +133,9 @@ export default class _ extends Container {
       currentIndex: index,
       story: {...StoryAssets[index]}
     });
+  }
+
+  reset() {
+    this.setState(DEFAULT);
   }
 }

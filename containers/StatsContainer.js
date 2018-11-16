@@ -1,19 +1,22 @@
 import React from 'react';
 import { Container } from 'unstated';
 
-export default class _ extends Container {
-  state = {
-    old: {
-      ulb: 50,
-      cercles: 50,
-      ace: 50,
-      sponsors: 50,
-    },
+
+const DEFAULT = {
+  old: {
     ulb: 50,
     cercles: 50,
     ace: 50,
     sponsors: 50,
-  };
+  },
+  ulb: 50,
+  cercles: 50,
+  ace: 50,
+  sponsors: 50,
+};
+
+export default class _ extends Container {
+  state = DEFAULT;
 
   diff(x, y) {
     return Math.max(Math.min(x + y, 100), 0);
@@ -27,5 +30,9 @@ export default class _ extends Container {
       ace: this.diff(this.state.ace, diff.ace),
       sponsors: this.diff(this.state.sponsors, diff.sponsors),
     });
+  }
+
+  reset() {
+    this.setState(DEFAULT);
   }
 }
