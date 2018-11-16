@@ -27,16 +27,18 @@ export default class _ extends React.Component {
                 </AnimatedView>
               </View>
             ) : (
-              <View>
-                <View style={{ flex: 1, backgroundColor: theme.SECONDARY_COLOR }}>
-                  <StoryImageView style={{height: SCREEN_HEIGHT/3, width: SCREEN_WIDTH}}/>
+              <View style={{ flex: 1, backgroundColor: theme.SECONDARY_COLOR, }}>
+                <View style={{ top: "5%", height: "95%", width: "80%", left: "10%", }}>
+                  <StoryImageView style={{height: SCREEN_HEIGHT/4, width: SCREEN_WIDTH}}/>
                 </View>
-                <Button block
-                  style={{ alignItems: 'center', backgroundColor: '#F8F5BF', }}
-                  onPress={() => story.goNext()}
-                >
-                  <Text style={{fontFamily: 'Retron2000', color: 'black'}}>Suivant</Text>
-                </Button>
+                <View style={{ justifyContent: 'flex-end', width: '90%', margin: 20, padding: 10, }}>
+                  <Button
+                    style={{ alignItems: 'center', backgroundColor: '#F8F5BF', }}
+                    onPress={() => story.goNext()}
+                  >
+                    <Text style={{fontFamily: 'Retron2000', color: 'black'}}>Suivant</Text>
+                  </Button>
+                </View>
               </View>
           ))}
         </Subscribe>
