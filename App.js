@@ -31,17 +31,7 @@ export default class App extends React.Component {
         <Subscribe to={[AppStateContainer]}>
           {state => (
             <Container>
-              {
-                this.state.fontLoaded
-                  ? state.state.intro
-                    ? <Intro/>
-                    : state.state.index
-                      ? <LandingPage/>
-                      : state.state.gameover
-                        ? <GameOver/>
-                        : <Main/>
-                  : <AppLoading/>
-              }
+              { this.state.fontLoaded ? state.state.page : <AppLoading/> }
             </Container>
           )}
         </Subscribe>

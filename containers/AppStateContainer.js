@@ -1,42 +1,33 @@
 import React from 'react';
 import { Container } from 'unstated';
+import { Intro, LandingPage, Main } from '../screens';
 
 export default class _ extends Container {
   state = {
-    index: true,
-    intro: false,
-    gameover: false,
+    page: <LandingPage/>,
   };
 
   switchToGameOver() {
-    this.setState({
-      index: false,
-      intro: false,
-      gameover: true,
-    });
+    // this.setState({
+    //   page: ,
+    // });
   }
 
   switchToApp() {
     this.setState({
-      index: false,
-      intro: false,
-      gameover: false,
+      page: <Main/>,
     });
   }
 
   switchToIntro() {
     this.setState({
-      index: false,
-      intro: true,
-      gameover: false,
+      page: <Intro/>,
     });
   }
 
   switchToIndex() {
     this.setState({
-      index: true,
-      intro: false,
-      gameover: false,
+      page: <LandingPage/>,
     });
   }
 }
