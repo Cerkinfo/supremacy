@@ -120,8 +120,15 @@ export default class _ extends Container {
     return (this.state.currentIndex + 1) == StoryAssets.length;
   }
 
+  isSwipable() {
+    return !(
+      (this.state.story.left == undefined || this.state.story.left == null) &&
+      (this.state.story.right == undefined || this.state.story.right == null)
+    );
+  }
+
   goNext(direction) {
-    const newIndex = this.state.story[direction].next;
+    const newIndex = this.isSwipable() ? this.state.story[direction].next : this.state.story.next
     this.setState({
       currentIndex: newIndex,
       story: {...StoryAssets[newIndex]}
