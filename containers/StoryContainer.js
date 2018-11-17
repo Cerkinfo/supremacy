@@ -91,13 +91,75 @@ const StoryAssets = [
     left: {
       text: "JEFKE",
       stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
-      next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+      next: "44db8aaa-eab7-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "JEFKE",
       stats: { ace: +5, ulb: +10, sponsors: -0, cercles: -20 },
-      next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+      next: "44db8aaa-eab7-11e8-9f32-f2801f1b9fd1",
     },
+  },
+
+  // BEA on veut mieux que ça
+  {
+    id: "44db8aaa-eab7-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/44db8aaa-eab7-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Il est venu le temps de militer ?",
+    description: "Comme à son habitude le BEA demande l'avis des cercles de l'ACE pour signer une charte commune pour le refinancement de l'enseignement. L'ACE doit aussi se position par apport à ça.",
+    left: {
+      text: "Signer",
+      stats: { ace: +5, ulb: +0, sponsors: -5, cercles: +0 },
+      next: "8e2e5d4e-eab8-11e8-9f32-f2801f1b9fd1",
+    },
+    right: {
+      text: "Ne pas signer",
+      stats: { ace: +0, ulb: +0, sponsors: +15, cercles: -20 },
+      next: "9626d558-eab8-11e8-9f32-f2801f1b9fd1",
+    },
+  },
+  {
+    id: "8e2e5d4e-eab8-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/8e2e5d4e-eab8-11e8-9f32-f2801f1b9fd1.png'),
+    title: "",
+    description: "L'ensemble des cercles ont décidé de signer la charte commune comme à leur habitude. Il serait en effet trop mal vu pour eux de refuser de signer une telle charte et donc se contente de suivre les autres cercles.",
+    next: "80415432-eaba-11e8-9f32-f2801f1b9fd1",
+  },
+  {
+    id: "9626d558-eab8-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/9626d558-eab8-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Ha bon ?",
+    description: "Vous êtes le seul cercle qui décide de ne pas signer la charte commune. Les autres cercles à leur habitude ont tous accepté de signer la charte.",
+    next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+  },
+  {
+    id: "80415432-eaba-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/80415432-eaba-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Organize !!!",
+    description: "Le jour du rassemblement tu te dis que ça serait pas une mauvaise idée de faire acte de présence pour représenter ton cercle. Une envie soudaine de t'en jeter une petite (bière) apparait néanmoins. Où vas-tu ?",
+    left: {
+      text: "Préfabs",
+      stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
+      next: "6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1",
+    },
+    right: {
+      text: "Rassemblement",
+      stats: { ace: +5, ulb: +10, sponsors: -0, cercles: -20 },
+      next: "da1dbb96-eabd-11e8-9f32-f2801f1b9fd1",
+    },
+  },
+  {
+    id: "6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1",
+    title: "",
+    uri: require('../assets/img/story/6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1.png'),
+    description: "Tu décides finaelement d'aller boire une petite bière malgrés la manifestation, tu te dis que ta présence ne changera pas grand chose au nombre de participants. À ton étonnement en y arrivant tu te rends compte que l'ensemble des comités de cercles est occupé de boire des bières dans les préfabs.",
+    next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+  },
+  {
+    id: "da1dbb96-eabd-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/da1dbb96-eabd-11e8-9f32-f2801f1b9fd1.png'),
+    title: "",
+    description: "À ton plus grand étonnement tu te rends compte qu'aucun comité de cercle n'a pris la peine de venir au rassemblement, ceux-ci étant plus occupé à boire des bières au préfab.",
+    next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
   },
 
   // Bières allégées bevin.
