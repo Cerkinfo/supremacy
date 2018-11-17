@@ -152,15 +152,34 @@ const StoryAssets = [
     uri: require('../assets/img/story/b9951840-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
     description: "Tu as fait tête à l'ULB qui à interdit les boissons énergisante. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
-    next: 9,
+    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "d217d664-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/d217d664-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
     description: "Tu as tenu tête à un ancien de l'ACE malgrés ses pression pour passer en réunion. Les boissons énergisante sont interdites et les réunions ne sont pas le lieu pour donner une tribune libre aux entreprises privées pour leur permettre de faire de la pub.",
-    next: 9,
+    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
   },
+
+  // CP ulb coopération
+  {
+    id: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/e7daa252-eab4-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Qui a volé ?",
+    description: "On te transmet que le panneau ULB coopération a été volé après un TD. Un suspect te parait évident mais tu n'as aucune preuve pour le dénonce. Que fait tu ? Faire un groupe de travail (GT) ou dénoncer le CP ?",
+    left: {
+      text: "Le CP",
+      stats: { ace: -5, ulb: +20, sponsors: +5, cercles: -25 },
+      next: "",
+    },
+    right: {
+      text: "Faire un GT",
+      stats: { ace: +15, ulb: -10, sponsors: -15, cercles: +0 },
+      next: "",
+    },
+  },
+
 ];
 
 const DEFAULT = {
