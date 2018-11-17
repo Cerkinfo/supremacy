@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     left: 25,
     width: 30,
     height: 30,
-    resizeMode: 'center',
     tintColor: 'white',
   },
   line: {
@@ -57,7 +56,7 @@ const slides = [
   {
     key: '1',
     title: 'Qu\'est ce que c\'est ?',
-    text: 'Supremacy est le jeu qui vous met dans la peau d\'un délégué de l\'ACE le long d\'une partie',
+    text: 'Supremacy est le jeu qui vous met dans la peau d\'un délégué de l\'ACE le temps d\'une partie',
     image: require('../assets/img/intro/cheers.png'),
     icon: 'ios-images-outline',
     colors: [theme.PRIMARY_COLOR, theme.DISABLED_COLOR],
@@ -65,7 +64,7 @@ const slides = [
   {
     key: '2',
     title: 'Comment jouer ?',
-    text: 'C\'est simple, vous avez déjà utilisé Tinder ? Le principe est le même des images arrivent à l\'écran et c\'est à vous de prendre une décision en swipant vers la gauche ou la droite (les propositions apparaissent au moment de swiper).',
+    text: 'C\'est simple, vous avez déjà utilisé Tinder ? Le principe est le même. Des images arrivent à l\'écran et c\'est à vous de prendre une décision en swipant vers la gauche ou la droite (les propositions apparaissent au moment de swiper).',
     image: require('../assets/img/intro/swipe.png'),
     colors: [theme.DISABLED_COLOR, theme.PRIMARY_COLOR],
   },
@@ -74,10 +73,10 @@ const slides = [
     title: 'Les décisions ...',
     text: 'Chacune de vos décisions va influencer l\'avis que des acteurs ont sur vous. À vous d\'essayer d\'avoir le meilleurs score pour chaque parties.',
     list: [
-      { id: 1, text: 'Ce logo représente l\'avis qu\'a le comité ACE de vous', image: require('../assets/img/logos/ace.png'), },
-      { id: 2, text: 'Celui ci représente le taux de satisfaction de l\'ULB par apport à vos actions.', image: require('../assets/img/logos/ulb.png'), },
-      { id: 3, text: 'Les entreprises privées et sponsors, elles aussi, doivent aussi être satisfaites par les actions que vous prenez', image: require('../assets/img/logos/sponsor.png'), },
-      { id: 4, text: 'Le plus important est l\'avis qu\'ont les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
+      { id: 1, text: 'Ce logo représente l\'avis du comité ACE envers vous.', image: require('../assets/img/logos/ace.png'), },
+      { id: 2, text: 'Celui ci représente le taux de satisfaction de l\'ULB.', image: require('../assets/img/logos/ulb.png'), },
+      { id: 3, text: 'Les entreprises privées et sponsors, elles aussi, doivent être satisfaites par vos décisions', image: require('../assets/img/logos/sponsor.png'), },
+      { id: 4, text: 'Ce dernier représente l\'avis qu\'ont les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
     ],
     colors: [theme.PRIMARY_COLOR, theme.DISABLED_COLOR],
   },
