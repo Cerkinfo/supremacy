@@ -39,15 +39,15 @@ const StoryAssets = [
     id: 2,
     uri: require('../assets/img/story/2.png'),
     title: 'L\'autoluigis',
-    description: "Deuxième décision qui peut influencer l'avis que les gens ont de toi est de faire un autoluigis avec un slip que le CP offre. On te le tend, qu'est-ce que tu fais ?",
+    description: "Le CP te tend un slip! Que faire? Autoluigis direct ou tu le gardes pour le donner aux réfugiés?",
     left: {
       text: "Autoluigis",
       stats: { ace: -5, ulb: +0, sponsors: +0, cercles: +20 },
       next: 3,
     },
     right: {
-      text: "C'est mort",
-      stats: { ace: -5, ulb: -0, sponsors: -0, cercles: -5 },
+      text: "Les réfugiés",
+      stats: { ace: +10, ulb: +5, sponsors: +0, cercles: -10 },
       next: 3,
     },
   },
@@ -71,7 +71,7 @@ const StoryAssets = [
     id: 4,
     uri: require('../assets/img/story/4.png'),
     title: 'Pull prez ...',
-    description: "Toujours dans l'optique d'avoir une bonne cohésion au seins du groupe des présidents, tu te fixes comme objectif de commander les pulls prez au plus tôt. Tu décides de faire le design, mais tu fais un dessins qui inclut tout le monde ou qui te met en avant ?",
+    description: "Toujours dans l'optique d'avoir une bonne cohésion au seins du groupe des présidents, tu te fixes comme objectif de commander les pulls prez au plus tôt. Tu décides de faire le design, mais tu fais un dessin qui inclut tout le monde ou qui te met en avant ?",
     left: {
       text: "Me mettre en avant",
       stats: { ace: +2, ulb: +8, sponsors: +10, cercles: -15 },
