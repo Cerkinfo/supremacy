@@ -181,6 +181,7 @@ const StoryAssets = [
   },
   {
     id: "d9be6a1e-eaaa-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/d9be6a1e-eaaa-11e8-9f32-f2801f1b9fd1.png'),
     title: "C'était si facile ...",
     description: "T'es bonne relation avec la COCU te permette d'avoir une réduction sur les prix sans trop de soucis. L'ULB est prête à rembourser une partie des fûts d'alléger pour rembourser les cercles de leur consommation d'alcool responsable.",
     next: "8b5c8076-eab0-11e8-9f32-f2801f1b9fd1",
