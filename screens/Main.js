@@ -21,22 +21,23 @@ export default class _ extends React.Component {
         <StoryView style={{ flex: 1 }}/>
         <Subscribe to={[StoryContainer, StatsContainer]}>
           {(story, stats) => (story.isSwipable() ? (
-              <View style={{ flex: 1, backgroundColor: theme.SECONDARY_COLOR }}>
+              <View style={{ flex: 2, backgroundColor: theme.SECONDARY_COLOR }}>
                 <AnimatedView story={story} stats={stats} position={this.position}>
                   <StoryImageView style={{height: SCREEN_HEIGHT/3, width: SCREEN_WIDTH}}/>
                 </AnimatedView>
               </View>
             ) : (
-              <View style={{ flex: 1, backgroundColor: theme.SECONDARY_COLOR, }}>
-                <View style={{ top: "5%", height: "95%", width: "80%", left: "10%", }}>
+              <View style={{ flex: 2, backgroundColor: theme.SECONDARY_COLOR, }}>
+                <View style={{ flex: 3, justifyContent: 'flex-start', top: "5%", height: "95%", width: "80%", left: "10%", }}>
                   <StoryImageView style={{height: SCREEN_HEIGHT/4, width: SCREEN_WIDTH}}/>
                 </View>
-                <View style={{ justifyContent: 'flex-end', width: '90%', margin: 20, padding: 10, }}>
+                <View style={{ justifyContent: 'flex-end', width: '90%', margin: 20, padding: 10, height: 60}}>
                   <Button
-                    style={{ alignItems: 'center', backgroundColor: '#F8F5BF', }}
+                    block
+                    style={{ flex:3, alignItems: 'center', backgroundColor: theme.DISABLED_COLOR, }}
                     onPress={() => story.goNext()}
                   >
-                    <Text style={{fontFamily: 'Retron2000', color: 'black'}}>Suivant</Text>
+                    <Text style={{fontFamily: 'Retron2000', color: 'black', }}>Suivant</Text>
                   </Button>
                 </View>
               </View>
