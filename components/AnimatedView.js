@@ -38,6 +38,39 @@ export default class _ extends React.Component {
     });
   }
 
+  componentDidMount() {
+    Animated.sequence([
+      Animated.delay(500),
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(
+            this.props.position.x,
+            {
+              toValue: 50,
+              duration: 500,
+            }
+          ),
+          Animated.timing(
+            this.props.position.x,
+            {
+              toValue: -50,
+              duration: 1000,
+              delay: 500,
+            }
+          ),
+          Animated.timing(
+            this.props.position.x,
+            {
+              toValue: 0,
+              duration: 500,
+              delay: 500,
+            }
+          )
+        ])
+      )
+    ]).start()
+  }
+
   componentWillMount() {
     this.PanResponder = PanResponder.create({
 
@@ -107,14 +140,39 @@ export default class _ extends React.Component {
         </View>
         <Animated.View
             {...this.PanResponder.panHandlers}
-            style={[this.rotateAndTranslate, { top: "5%", height: "95%", width: "80%", left: "10%" }]}>
-            <Animated.View style={{ opacity: this.rightSwipeOpacity, position: 'absolute', top: 50, left: 40, zIndex: 1000}}>
-              <Text style={{ borderWidth: 1, borderColor: theme.SECONDARY_COLOR, color: theme.SECONDARY_COLOR, fontSize:this.getFontSize(right), fontWeight: '800', padding: 10 }}>
+            style={[this.rotateAndTranslate, {
+              top: "5%",
+              height: "95%",
+              width: "80%",
+              left: "10%" }]}>
+            <Animated.View style={{
+              opacity: this.rightSwipeOpacity,
+              position: 'absolute',
+              top: 50,
+              left: 40,
+              zIndex: 1000}}>
+              <Text style={{
+                borderWidth: 1,
+                borderColor: theme.SECONDARY_COLOR,
+                color: theme.SECONDARY_COLOR,
+                fontSize:this.getFontSize(right),
+                fontWeight: '800', padding: 10 }}>
                 {right ? right : "Contre"}
               </Text>
             </Animated.View>
-            <Animated.View style={{ opacity: this.leftSwipeOpacity, position: 'absolute', top: 50, right: 40, zIndex: 1000}}>
-              <Text style={{ borderWidth: 1, borderColor: theme.SECONDARY_COLOR, color: theme.SECONDARY_COLOR, fontSize: this.getFontSize(left), fontWeight: '800', padding: 10 }}>
+            <Animated.View style={{
+              opacity: this.leftSwipeOpacity,
+              position: 'absolute',
+              top: 50,
+              right: 40,
+              zIndex: 1000}}>
+              <Text style={{
+                borderWidth: 1,
+                borderColor: theme.SECONDARY_COLOR,
+                color: theme.SECONDARY_COLOR,
+                fontSize: this.getFontSize(left),
+                fontWeight: '800',
+                padding: 10 }}>
                 {left ? left: "Pour"}
               </Text>
             </Animated.View>
