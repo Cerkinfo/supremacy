@@ -46,14 +46,14 @@ export default class _ extends React.Component {
           Animated.timing(
             this.props.position.x,
             {
-              toValue: 50,
+              toValue: SCREEN_WIDTH / 4,
               duration: 500,
             }
           ),
           Animated.timing(
             this.props.position.x,
             {
-              toValue: -50,
+              toValue: -SCREEN_WIDTH / 4,
               duration: 1000,
               delay: 500,
             }
@@ -156,7 +156,9 @@ export default class _ extends React.Component {
                 borderColor: theme.SECONDARY_COLOR,
                 color: theme.SECONDARY_COLOR,
                 fontSize:this.getFontSize(right),
-                fontWeight: '800', padding: 10 }}>
+                fontWeight: '800',
+                padding: 10,
+                backgroundColor: theme.BACKGROUND_COLOR }}>
                 {right ? right : "Contre"}
               </Text>
             </Animated.View>
@@ -172,7 +174,8 @@ export default class _ extends React.Component {
                 color: theme.SECONDARY_COLOR,
                 fontSize: this.getFontSize(left),
                 fontWeight: '800',
-                padding: 10 }}>
+                padding: 10,
+                backgroundColor: theme.BACKGROUND_COLOR }}>
                 {left ? left: "Pour"}
               </Text>
             </Animated.View>
