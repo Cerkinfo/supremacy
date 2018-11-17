@@ -91,12 +91,12 @@ const StoryAssets = [
     left: {
       text: "JEFKE",
       stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
-      next: 5,
+      next: 6,
     },
     right: {
       text: "JEFKE",
       stats: { ace: +5, ulb: +10, sponsors: -0, cercles: -20 },
-      next: 5,
+      next: 6,
     },
   },
 ];
@@ -127,19 +127,25 @@ export default class _ extends Container {
     );
   }
 
-  goNext(direction) {
-    const newIndex = this.isSwipable() ? this.state.story[direction].next : this.state.story.next
+  set(uuid) {
     this.setState({
-      currentIndex: newIndex,
-      story: {...StoryAssets[newIndex]}
+      currentIndex: uuid,
+      story: {...StoryAssets.find(x => uuid == x.id)}
     });
   }
 
-  set(index) {
-    this.setState({
-      currentIndex: index,
-      story: {...StoryAssets[index]}
-    });
+  goNext(direction) {
+    const newUuid = this.isSwipable() ? this.state.story[direction].next : this.state.story.next
+
+    this.set(newUuid);
+  }
+
+  goToApp() {
+    this.set(1);
+  }
+
+  goToIntro() {
+    this.set(0);
   }
 
   reset() {
