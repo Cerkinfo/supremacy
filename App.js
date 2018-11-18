@@ -3,8 +3,8 @@ import { Font, AppLoading  } from 'expo';
 import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'react-native';
 import { Container, Button, Text } from 'native-base';
 import { Provider, Subscribe } from 'unstated';
-import { AppStateContainer } from './containers';
-import { LandingPage, Intro, Main, GameOver } from './screens';
+import { AppStateContainer, StoryContainer } from './containers';
+import { Credit, } from './screens';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -29,10 +29,15 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider>
-        <Subscribe to={[AppStateContainer]}>
-          {state => (
+        <Subscribe to={[AppStateContainer, StoryContainer]}>
+          {(state, story) => (
             <Container>
-              { this.state.fontLoaded ? state.state.page : <AppLoading/> }
+              { this.state.fontLoaded
+                  ? story.isLast()
+                    ? <Credit/>
+                    : state.state.page
+                  : <AppLoading/>
+              }
             </Container>
           )}
         </Subscribe>

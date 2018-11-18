@@ -4,7 +4,7 @@ import {
   Text,
   View,
   Image,
-  ProgressViewIOS
+  ProgressViewIOS,
 } from "react-native";
 import { Button } from 'native-base';
 import { Subscribe } from 'unstated';
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingHorizontal: 32,
     marginBottom: 32,
+    fontSize: 12,
     fontFamily: 'Retron2000'
   },
   title: {
@@ -79,9 +80,13 @@ export default ({ title, subtitle, image, buttonText, buttonCallback, subButtonT
             {subtitle}
           </Text>
         </View>
-        <View style={styles.middleContainer}>
-          <Image source={image} style={styles.image} />
-        </View>
+        {image
+          ? (
+            <View style={styles.middleContainer}>
+              <Image source={image} style={styles.image} />
+            </View>
+          ) : null
+        }
         <View style={styles.bottomContainer}>
           <Button block
             style={styles.button}

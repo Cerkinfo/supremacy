@@ -336,12 +336,7 @@ const StoryAssets = [
 
 const DEFAULT = {
   story: {
-    title: StoryAssets[0].title,
-    description: StoryAssets[0].description,
-    uri: StoryAssets[0].uri,
-    left: StoryAssets[0].left,
-    right: StoryAssets[0].right,
-    stats: StoryAssets[0].stats,
+    ...StoryAssets[0]
   },
   currentIndex: 0,
 };
@@ -350,7 +345,7 @@ export default class _ extends Container {
   state = DEFAULT;
 
   isLast() {
-    return (this.state.currentIndex + 1) == StoryAssets.length;
+    return (this.state.story == null && this.state.currentIndex == null);
   }
 
   isSwipable() {
@@ -361,16 +356,27 @@ export default class _ extends Container {
   }
 
   set(uuid) {
-    this.setState({
-      currentIndex: uuid,
-      story: {...StoryAssets.find(x => uuid == x.id)}
-    });
+    if (uuid) {
+      this.setState({
+        currentIndex: uuid,
+        story: {...StoryAssets.find(x => uuid == x.id)}
+      });
+    } else {
+      this.setState({
+        currentIndex: null,
+        story: null,
+      })
+    }
   }
 
   goNext(direction) {
     const newUuid = this.isSwipable() ? this.state.story[direction].next : this.state.story.next
 
-    this.set(newUuid);
+    if (newUuid == "" || newUuid == null) {
+      this.set(null);
+    } else {
+      this.set(newUuid);
+    }
   }
 
   goToApp() {
