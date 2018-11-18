@@ -338,25 +338,19 @@ const StoryAssets = [
     id: "bab14d0a-ead0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/bab14d0a-ead0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-<<<<<<< HEAD
-    description: "Devant la pression des cercles, une AG extraordinaire est organisée début décembre pour rendre compte du problème et voter l'exclusion des fautifs. Cette AG est également l'occasion pour tous les membre du comité de faire le point sur leurs activités.",
-    next: "d9644646-eb50-11e8-9f32-f2801f1b9fd1",
-=======
     description: "Devant la pression des cercles, une AG extraordinaire est organisée début décembre pour rendre compte du problème et voter l'exclusion des fautifs. Cette AG est également l'occasion pour tous les membres du comité de faire le point sur leurs activités.",
-    next: "",
->>>>>>> 099014fa8790927368a237bc4e9f2411cb295a73
+    next: "d9644646-eb50-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "36be27d6-ead3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/36be27d6-ead3-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-<<<<<<< HEAD
-    description: "La transparence c'est bien pour les autres! Autant noyer le poisson le plus longtemps possible. Il faudrait vraiment pas que les cercles mettent leur nez dans nos affaires. A l'AG de fin d'année il sera trop tard pour qu'il réagissent...",
+    description: "La transparence c'est bien pour les autres! Autant noyer le poisson le plus longtemps possible. Il faudrait vraiment pas que les cercles mettent leur nez dans nos affaires. A l'AG de fin d'année il sera trop tard pour qu'ils réagissent...",
     next: "d9644646-eb50-11e8-9f32-f2801f1b9fd1",
   },
 
   {
-    id: "d9644646-eb50-11e8-9f32-f2801f1b9fd1"
+    id: "d9644646-eb50-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/d9644646-eb50-11e8-9f32-f2801f1b9fd1.png'),
     title: "Mais pour qui ils se prennent ?",
     description: "Le jour de la St-V un cercle se permet de faire un jeu vidéo qui critique nos agissements. Comment réagir ? On laisse tomber parce que ça fait partie de l'esprit critique de la StV ou on s'en prend à eux, ils vont quand même pas tenir longtemps",
@@ -369,11 +363,7 @@ const StoryAssets = [
       text: "Faire un GT",
       stats: { ace: +15, ulb: +10, sponsors: +5, cercles: +5 },
       next: "",
-    },
-=======
-    description: "La transparence c'est bien pour les autres! Autant noyer le poisson le plus longtemps possible. Il faudrait vraiment pas que les cercles mettent leur nez dans nos affaires. A l'AG de fin d'année il sera trop tard pour qu'ils réagissent...",
-    next: "",
->>>>>>> 099014fa8790927368a237bc4e9f2411cb295a73
+    }
   },
 
 ];
