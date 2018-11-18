@@ -184,13 +184,31 @@ const StoryAssets = [
     uri: require('../assets/img/story/d9be6a1e-eaaa-11e8-9f32-f2801f1b9fd1.png'),
     title: "C'était si facile ...",
     description: "T'es bonne relation avec la COCU te permette d'avoir une réduction sur les prix sans trop de soucis. L'ULB est prête à rembourser une partie des fûts d'alléger pour rembourser les cercles de leur consommation d'alcool responsable.",
-    next: "8b5c8076-eab0-11e8-9f32-f2801f1b9fd1",
+    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "8fdf813e-eaab-11e8-9f32-f2801f1b9fd1",
     title: "Gros désaccord ...",
     description: "Aucun cercle n'est prêt à vous suivre, leurs mots sont les suivant: \"C'est pas à nous d'être responsable de la consommation d'alcool des gens, ils ont qu'à savoir boire\".",
-    next: "8b5c8076-eab0-11e8-9f32-f2801f1b9fd1",
+    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+  },
+
+  // CP ulb coopération
+  {
+    id: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/e7daa252-eab4-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Qui a volé ?",
+    description: "On te transmet que le panneau ULB coopération a été volé après un TD. Un suspect te parait évident mais tu n'as aucune preuve pour le dénonce. Que fait tu ? Faire un groupe de travail (GT) ou dénoncer le CP ?",
+    left: {
+      text: "Le CP",
+      stats: { ace: -5, ulb: +20, sponsors: +5, cercles: -25 },
+      next: "8b5c8076-eab0-11e8-9f32-f2801f1b9fd1",
+    },
+    right: {
+      text: "Faire un GT",
+      stats: { ace: +15, ulb: -10, sponsors: -15, cercles: +0 },
+      next: "8b5c8076-eab0-11e8-9f32-f2801f1b9fd1",
+    },
   },
 
   // ULB STARTUP NATION: wyse invite
@@ -215,30 +233,29 @@ const StoryAssets = [
     uri: require('../assets/img/story/b9951840-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
     description: "Tu as fait tête à l'ULB qui à interdit les boissons énergisante. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
-    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    next: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "d217d664-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/d217d664-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
     description: "Tu as tenu tête à un ancien de l'ACE malgrés ses pression pour passer en réunion. Les boissons énergisante sont interdites et les réunions ne sont pas le lieu pour donner une tribune libre aux entreprises privées pour leur permettre de faire de la pub.",
-    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    next: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
   },
 
-  // CP ulb coopération
   {
-    id: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
-    uri: require('../assets/img/story/e7daa252-eab4-11e8-9f32-f2801f1b9fd1.png'),
-    title: "Qui a volé ?",
-    description: "On te transmet que le panneau ULB coopération a été volé après un TD. Un suspect te parait évident mais tu n'as aucune preuve pour le dénonce. Que fait tu ? Faire un groupe de travail (GT) ou dénoncer le CP ?",
+    id: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/6b262dbc-eac3-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Le consentement et BevIn",
+    description: "Le représentant de BevIn décide de commander des fûts d'une bière allemande dégueulasse malgrés la réponse négative de tout les cercles. Les camions sont devant ta porte, qu'est ce que tu fais ?",
     left: {
-      text: "Le CP",
-      stats: { ace: -5, ulb: +20, sponsors: +5, cercles: -25 },
+      text: "Réceptionner",
+      stats: { ace: -5, ulb: +0, sponsors: +30, cercles: -30 },
       next: "",
     },
     right: {
-      text: "Faire un GT",
-      stats: { ace: +15, ulb: -10, sponsors: -15, cercles: +0 },
+      text: "Renvoyer",
+      stats: { ace: +5, ulb: -0, sponsors: -30, cercles: +15 },
       next: "",
     },
   },
