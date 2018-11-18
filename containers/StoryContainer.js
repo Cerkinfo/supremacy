@@ -23,7 +23,7 @@ const StoryAssets = [
     id: 1,
     uri: require('../assets/img/story/1.jpg'),
     title: 'Bienvenu au nouveau prez !',
-    description: "Bonjour nouveau prez ! Fraichement élu par l'AG car personne ne veut se présenter à ce poste et tout les anciens ont déserté le comité, tu dois faire la première décision de ton mandat. Que faire ce soir ?",
+    description: "Bonjour nouveau prez ! Fraichement élu par l'AG car personne ne veut se présenter à ce poste et tous les anciens ont déserté le comité, tu dois faire la première décision de ton mandat. Que faire ce soir ?",
     left: {
       text: "Gauguin",
       stats: { ace: +15, ulb: -5, sponsors: -5, cercles: +15 },
@@ -40,7 +40,7 @@ const StoryAssets = [
     id: "4fd1cbda-eab3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/4fd1cbda-eab3-11e8-9f32-f2801f1b9fd1.png'),
     title: 'L\'autoluigis',
-    description: "Le CP te tend un slip! Que faire? Autoluigis direct ou tu le gardes pour le donner aux réfugiés?",
+    description: "Le CP te tend un slip ! Que faire ? Autoluigis direct ou tu le gardes pour le donner aux réfugiés ?",
     left: {
       text: "Autoluigis",
       stats: { ace: -5, ulb: +0, sponsors: +0, cercles: +20 },
@@ -91,7 +91,7 @@ const StoryAssets = [
     id: "eb5de058-eab2-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/eb5de058-eab2-11e8-9f32-f2801f1b9fd1.png'),
     title: "TD Sectarisé ?",
-    description: "Première réunion, déjà les premières décision à prendre concernant le baptême, il faut négocier avec l'ULB pour trouver un endroit où faire les baptêmes. Où le faire ?",
+    description: "Première réunion, déjà les premières décisions à prendre concernant le baptême, il faut négocier avec l'ULB pour trouver un endroit où faire les baptêmes. Où le faire ?",
     left: {
       text: "JEFKE",
       stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
@@ -109,7 +109,7 @@ const StoryAssets = [
     id: "44db8aaa-eab7-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/44db8aaa-eab7-11e8-9f32-f2801f1b9fd1.png'),
     title: "Il est venu le temps de militer ?",
-    description: "Comme à son habitude le BEA demande l'avis des cercles de l'ACE pour signer une charte commune pour le refinancement de l'enseignement. L'ACE doit aussi se position par apport à ça.",
+    description: "Comme à son habitude le BEA demande l'avis des cercles de l'ACE pour signer une charte commune pour le refinancement de l'enseignement. L'ACE doit aussi se positionner par apport à ça.",
     left: {
       text: "Signer",
       stats: { ace: +5, ulb: +0, sponsors: -5, cercles: +0 },
@@ -155,7 +155,7 @@ const StoryAssets = [
     id: "6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1",
     title: "",
     uri: require('../assets/img/story/6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1.png'),
-    description: "Tu décides finaelement d'aller boire une petite bière malgrés la manifestation, tu te dis que ta présence ne changera pas grand chose au nombre de participants. À ton étonnement en y arrivant tu te rends compte que l'ensemble des comités de cercles est occupé de boire des bières dans les préfabs.",
+    description: "Tu décides finalement d'aller boire une petite bière malgré la manifestation, tu te dis que ta présence ne changera pas grand-chose au nombre de participants. À ton étonnement en y arrivant tu te rends compte que l'ensemble des comités de cercles est occupé de boire des bières dans les préfabs.",
     next: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
   },
   {
@@ -171,7 +171,7 @@ const StoryAssets = [
     id: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/5f97e4be-eacc-11e8-9f32-f2801f1b9fd1.png'),
     title: "Le cas écocups",
-    description: "L'ensemble des cercle se sentant de plus en plus concerné par la consommation de déchet dans la JEFKE posent de plus en plus de question sur l'état du projet visant à la fin de l'utilisation de gobelets jetable. Il leur faut une réponse que dit tu ? Les premiers points qui te viennent à l'esprit sont le manque d'infra pour stocker et nettoyer toute ces écocups à la Jefke, le second est la dangerosité de recevoir une écocup sur la tête.",
+    description: "L'ensemble des cercles se sentant de plus en plus concerné par la consommation de déchet dans la JEFKE posent de plus en plus de question sur l'état du projet visant à la fin de l'utilisation de gobelets jetable. Il leur faut une réponse que dis-tu ? Les premiers points qui te viennent à l'esprit sont le manque d'infra pour stocker et nettoyer toute ces écocups à la Jefke, le second est la dangerosité de recevoir une écocup sur la tête.",
     left: {
       text: "Les infras",
       stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +15 },
@@ -189,7 +189,7 @@ const StoryAssets = [
     id: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1.png'),
     title: "Une idée originale ?",
-    description: "Après qu'InbeV soit venu présenté son agenda au près des cercles, notamment sur les bières avec un taux d'alcool plus faible, il te viens l'idée d'en servir en période de baptême pour réduire les risques lié à la consommation d'alcool. Mais le prix est un frein, qui va payer une partie des fûts ?",
+    description: "Après qu'BevIn soit venu présenter son agenda au près des cercles, notamment sur les bières avec un taux d'alcool plus faible, il te vient l'idée d'en servir en période de baptême pour réduire les risques lié à la consommation d'alcool. Mais le prix est un frein, qui va payer une partie des fûts ?",
     left: {
       text: "L'ULB",
       stats: { ace: +10, ulb: -10, sponsors: +20, cercles: +5 },
@@ -220,7 +220,7 @@ const StoryAssets = [
     id: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/e7daa252-eab4-11e8-9f32-f2801f1b9fd1.png'),
     title: "Qui a volé ?",
-    description: "On te transmet que le panneau ULB coopération a été volé après un TD. Un suspect te parait évident mais tu n'as aucune preuve pour le dénonce. Que fait tu ? Faire un groupe de travail (GT) ou dénoncer le CP ?",
+    description: "On te transmet que le panneau ULB coopération a été volé après un TD. Un suspect te parait évident mais tu n'as aucune preuve pour le dénonce. Que fais-tu ? Faire un groupe de travail (GT) ou dénoncer le CP ?",
     left: {
       text: "Le CP",
       stats: { ace: -5, ulb: +20, sponsors: +5, cercles: -25 },
@@ -238,7 +238,7 @@ const StoryAssets = [
     id: "8b5c8076-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/8b5c8076-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "ACE la futur startup nation ?",
-    description: "Comme d'habitude une enième startup veut profiter de la tribune offerte par les réunions ACE au près des étudiants pour venir faire la promotion de son nouveau produit. Ici il s'agit d'une boisson énergissant soit disant naturelle et bio. Il s'agit surtout d'un ancien membre du comité de l'ACE. Qu'est-ce que tu fais ?",
+    description: "Comme d'habitude une énième startup veut profiter de la tribune offerte par les réunions ACE au près des étudiants pour venir faire la promotion de son nouveau produit. Ici il s'agit d'une boisson énergisante soi-disant naturelle et bio. Il s'agit surtout d'un ancien membre du comité de l'ACE. Qu'est-ce que tu fais ?",
     left: {
       text: "L'inviter",
       stats: { ace: +10, ulb: -10, sponsors: +20, cercles: -15 },
@@ -254,14 +254,14 @@ const StoryAssets = [
     id: "b9951840-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/b9951840-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-    description: "Tu as fait tête à l'ULB qui à interdit les boissons énergisante. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
+    description: "Tu as fait tête à l'ULB qui à interdit les boissons énergisantes. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
     next: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "d217d664-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/d217d664-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-    description: "Tu as tenu tête à un ancien de l'ACE malgrés ses pression pour passer en réunion. Les boissons énergisante sont interdites et les réunions ne sont pas le lieu pour donner une tribune libre aux entreprises privées pour leur permettre de faire de la pub.",
+    description: "Tu as tenu tête à un ancien de l'ACE malgré ses pressions pour passer en réunion. Les boissons énergisantes sont interdites et les réunions ne sont pas le lieu pour donner une tribune libre aux entreprises privées pour leur permettre de faire de la pub.",
     next: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
   },
 
@@ -269,7 +269,7 @@ const StoryAssets = [
     id: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/6b262dbc-eac3-11e8-9f32-f2801f1b9fd1.png'),
     title: "Le consentement et BevIn",
-    description: "Le représentant de BevIn décide de commander des fûts d'une bière allemande dégueulasse malgrés la réponse négative de tout les cercles. Les camions sont devant ta porte, qu'est ce que tu fais ?",
+    description: "Le représentant de BevIn décide de commander des fûts d'une bière allemande dégueulasse malgré la réponse négative de tous les cercles. Les camions sont devant ta porte, qu'est-ce que tu fais ?",
     left: {
       text: "Réceptionner",
       stats: { ace: -5, ulb: +0, sponsors: +30, cercles: -30 },
@@ -287,7 +287,7 @@ const StoryAssets = [
     id: "d8e523bc-eac8-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/d8e523bc-eac8-11e8-9f32-f2801f1b9fd1.png'),
     title: "Mettre les priorités",
-    description: "Suite aux nombreuses aggression qui se passent autour de la JEFKE, un cercle propose de faire une campagne d'affichage d'urgence pour rappeler les rêgles de sécurité afin d'éviter des aggressions avec des comportements à risque. Qu'allez vous répondre ?",
+    description: "Suite aux nombreuses agressions qui se passent autour de la JEFKE, un cercle propose de faire une campagne d'affichage d'urgence pour rappeler les règles de sécurité afin d'éviter des agressions avec des comportements à risque. Qu'allez-vous répondre ?",
     left: {
       text: "Pousser le projet",
       stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
@@ -321,14 +321,14 @@ const StoryAssets = [
     id: "bab14d0a-ead0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/bab14d0a-ead0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-    description: "Devant la pression des cercles, une AG extraordinaire est organisée début décembre pour rendre compte du problème et voter l'exclusion des fautifs. Cette AG est également l'occasion pour tous les membre du comité de faire le point sur leurs activités.",
+    description: "Devant la pression des cercles, une AG extraordinaire est organisée début décembre pour rendre compte du problème et voter l'exclusion des fautifs. Cette AG est également l'occasion pour tous les membres du comité de faire le point sur leurs activités.",
     next: "",
   },
   {
     id: "36be27d6-ead3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/36be27d6-ead3-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-    description: "La transparence c'est bien pour les autres! Autant noyer le poisson le plus longtemps possible. Il faudrait vraiment pas que les cercles mettent leur nez dans nos affaires. A l'AG de fin d'année il sera trop tard pour qu'il réagissent...",
+    description: "La transparence c'est bien pour les autres! Autant noyer le poisson le plus longtemps possible. Il faudrait vraiment pas que les cercles mettent leur nez dans nos affaires. A l'AG de fin d'année il sera trop tard pour qu'ils réagissent...",
     next: "",
   },
 
