@@ -349,6 +349,23 @@ const StoryAssets = [
     next: "",
   },
 
+  {
+    id: "d9644646-eb50-11e8-9f32-f2801f1b9fd1"
+    uri: require('../assets/img/story/.png'),
+    title: "Mais pour qui ils se prennent ?",
+    description: "",
+    left: {
+      text: "Laisser tomber",
+      stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
+      next: "",
+    },
+    right: {
+      text: "Faire un GT",
+      stats: { ace: +15, ulb: +10, sponsors: +5, cercles: +5 },
+      next: "",
+    },
+  },
+
 ];
 
 const DEFAULT = {
