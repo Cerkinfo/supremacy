@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Retron2000'
   },
   title: {
-    fontSize: 22,
+    fontSize: 30,
     color: 'white',
     backgroundColor: 'transparent',
     textAlign: 'center',
     marginBottom: 16,
-    fontFamily: 'Retron2000'
+    fontFamily: 'Europhonic'
   },
   subtext: {
     color: 'rgba(255, 255, 255, 0.8)',
