@@ -35,6 +35,7 @@ const StoryAssets = [
       next: "4fd1cbda-eab3-11e8-9f32-f2801f1b9fd1",
     },
   },
+
   {
     id: "4fd1cbda-eab3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/4fd1cbda-eab3-11e8-9f32-f2801f1b9fd1.png'),
@@ -51,6 +52,7 @@ const StoryAssets = [
       next: "183c404c-eab3-11e8-9f32-f2801f1b9fd1",
     },
   },
+
   {
     id: "183c404c-eab3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/183c404c-eab3-11e8-9f32-f2801f1b9fd1.png'),
@@ -67,6 +69,7 @@ const StoryAssets = [
       next: "053a8de6-eab3-11e8-9f32-f2801f1b9fd1",
     },
   },
+
   {
     id: "053a8de6-eab3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/053a8de6-eab3-11e8-9f32-f2801f1b9fd1.png'),
@@ -83,6 +86,7 @@ const StoryAssets = [
       next: "eb5de058-eab2-11e8-9f32-f2801f1b9fd1",
     },
   },
+
   {
     id: "eb5de058-eab2-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/eb5de058-eab2-11e8-9f32-f2801f1b9fd1.png'),
@@ -251,15 +255,32 @@ const StoryAssets = [
     left: {
       text: "Réceptionner",
       stats: { ace: -5, ulb: +0, sponsors: +30, cercles: -30 },
-      next: "",
+      next: "d8e523bc-eac8-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "Renvoyer",
       stats: { ace: +5, ulb: -0, sponsors: -30, cercles: +15 },
-      next: "",
+      next: "d8e523bc-eac8-11e8-9f32-f2801f1b9fd1",
     },
   },
 
+  // Aggressions autours de la JEFKE
+  {
+    id: "d8e523bc-eac8-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/d8e523bc-eac8-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Mettre les priorités",
+    description: "Suite aux nombreuses aggression qui se passent autour de la JEFKE, un cercle propose de faire une campagne d'affichage d'urgence pour rappeler les rêgles de sécurité afin d'éviter des aggressions avec des comportements à risque. Qu'allez vous répondre ?",
+    left: {
+      text: "Pousser le projet",
+      stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
+      next: "",
+    },
+    right: {
+      text: "Faire un GT",
+      stats: { ace: +15, ulb: +10, sponsors: +5, cercles: +5 },
+      next: "",
+    },
+  },
 ];
 
 const DEFAULT = {
