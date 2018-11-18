@@ -339,21 +339,21 @@ const StoryAssets = [
     uri: require('../assets/img/story/bab14d0a-ead0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
     description: "Devant la pression des cercles, une AG extraordinaire est organisée début décembre pour rendre compte du problème et voter l'exclusion des fautifs. Cette AG est également l'occasion pour tous les membre du comité de faire le point sur leurs activités.",
-    next: "",
+    next: "d9644646-eb50-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "36be27d6-ead3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/36be27d6-ead3-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
     description: "La transparence c'est bien pour les autres! Autant noyer le poisson le plus longtemps possible. Il faudrait vraiment pas que les cercles mettent leur nez dans nos affaires. A l'AG de fin d'année il sera trop tard pour qu'il réagissent...",
-    next: "",
+    next: "d9644646-eb50-11e8-9f32-f2801f1b9fd1",
   },
 
   {
     id: "d9644646-eb50-11e8-9f32-f2801f1b9fd1"
-    uri: require('../assets/img/story/.png'),
+    uri: require('../assets/img/story/d9644646-eb50-11e8-9f32-f2801f1b9fd1.png'),
     title: "Mais pour qui ils se prennent ?",
-    description: "",
+    description: "Le jour de la St-V un cercle se permet de faire un jeu vidéo qui critique nos agissements. Comment réagir ? On laisse tomber parce que ça fait partie de l'esprit critique de la StV ou on s'en prend à eux, ils vont quand même pas tenir longtemps",
     left: {
       text: "Laisser tomber",
       stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
