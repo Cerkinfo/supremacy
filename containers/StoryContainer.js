@@ -133,7 +133,7 @@ const StoryAssets = [
     uri: require('../assets/img/story/9626d558-eab8-11e8-9f32-f2801f1b9fd1.png'),
     title: "Ha bon ?",
     description: "Vous êtes le seul cercle qui décide de ne pas signer la charte commune. Les autres cercles à leur habitude ont tous accepté de signer la charte.",
-    next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+    next: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "80415432-eaba-11e8-9f32-f2801f1b9fd1",
@@ -142,12 +142,12 @@ const StoryAssets = [
     description: "Le jour du rassemblement tu te dis que ça serait pas une mauvaise idée de faire acte de présence pour représenter ton cercle. Une envie soudaine de t'en jeter une petite (bière) apparait néanmoins. Où vas-tu ?",
     left: {
       text: "Préfabs",
-      stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
+      stats: { ace: +5, ulb: +10, sponsors: +0, cercles: +5 },
       next: "6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "Rassemblement",
-      stats: { ace: +5, ulb: +10, sponsors: -0, cercles: -20 },
+      stats: { ace: +5, ulb: +10, sponsors: -0, cercles: -5 },
       next: "da1dbb96-eabd-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -156,16 +156,34 @@ const StoryAssets = [
     title: "",
     uri: require('../assets/img/story/6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1.png'),
     description: "Tu décides finaelement d'aller boire une petite bière malgrés la manifestation, tu te dis que ta présence ne changera pas grand chose au nombre de participants. À ton étonnement en y arrivant tu te rends compte que l'ensemble des comités de cercles est occupé de boire des bières dans les préfabs.",
-    next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+    next: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
   },
   {
     id: "da1dbb96-eabd-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/da1dbb96-eabd-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
     description: "À ton plus grand étonnement tu te rends compte qu'aucun comité de cercle n'a pris la peine de venir au rassemblement, ceux-ci étant plus occupé à boire des bières au préfab.",
-    next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+    next: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
   },
 
+  // Écocups
+  {
+    id: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/5f97e4be-eacc-11e8-9f32-f2801f1b9fd1.png'),
+    title: "Le cas écocups",
+    description: "L'ensemble des cercle se sentant de plus en plus concerné par la consommation de déchet dans la JEFKE posent de plus en plus de question sur l'état du projet visant à la fin de l'utilisation de gobelets jetable. Il leur faut une réponse que dit tu ?",
+    left: {
+      text: "Mentionner les problèmes d'infra",
+      stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +15 },
+      next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+    },
+    right: {
+      text: "Une écocups ça fait mal sur la tête",
+      stats: { ace: +5, ulb: +10, sponsors: +0, cercles: +10 },
+      next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
+    },
+  },
+  
   // Bières allégées bevin.
   {
     id: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
@@ -281,6 +299,7 @@ const StoryAssets = [
       next: "",
     },
   },
+
 ];
 
 const DEFAULT = {
