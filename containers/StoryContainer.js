@@ -291,13 +291,45 @@ const StoryAssets = [
     left: {
       text: "Pousser le projet",
       stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
-      next: "",
+      next: "9f38edf6-ead2-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "Faire un GT",
       stats: { ace: +15, ulb: +10, sponsors: +5, cercles: +5 },
-      next: "",
+      next: "9f38edf6-ead2-11e8-9f32-f2801f1b9fd1",
     },
+  },
+
+  // Champagne NTV
+  {
+    id: "9f38edf6-ead2-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/9f38edf6-ead2-11e8-9f32-f2801f1b9fd1.png'),
+    title: "C'est ma tournée!",
+    description: "Le lendemain de la NTV, le trésorier s'affole! Un trou de plusieurs centaines d'euros dans ses comptes. Les images de surveillance montrent 1/4 de ton comité se servant dans le stock de champagne de la réserve. J'en parle à la prochaine réunion ACE ou j'attends l'AG de fin d'année pour en parler?",
+    left: {
+      text: "Parler",
+      stats: { ace: -15, ulb: -5, sponsors: +0, cercles: +15 },
+      next: "bab14d0a-ead0-11e8-9f32-f2801f1b9fd1",
+    },
+    right: {
+      text: "Attendre",
+      stats: { ace: +15, ulb: +0, sponsors: +0, cercles: -15 },
+      next: "36be27d6-ead3-11e8-9f32-f2801f1b9fd1",
+    },
+  },
+  {
+    id: "bab14d0a-ead0-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/bab14d0a-ead0-11e8-9f32-f2801f1b9fd1.png'),
+    title: "",
+    description: "Devant la pression des cercles, une AG extraordinaire est organisée début décembre pour rendre compte du problème et voter l'exclusion des fautifs. Cette AG est également l'occasion pour tous les membre du comité de faire le point sur leurs activités.",
+    next: "",
+  },
+  {
+    id: "36be27d6-ead3-11e8-9f32-f2801f1b9fd1",
+    uri: require('../assets/img/story/36be27d6-ead3-11e8-9f32-f2801f1b9fd1.png'),
+    title: "",
+    description: "La transparence c'est bien pour les autres! Autant noyer le poisson le plus longtemps possible. Il faudrait vraiment pas que les cercles mettent leur nez dans nos affaires. A l'AG de fin d'année il sera trop tard pour qu'il réagissent...",
+    next: "",
   },
 
 ];
