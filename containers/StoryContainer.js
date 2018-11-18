@@ -206,13 +206,30 @@ const StoryAssets = [
     uri: require('../assets/img/story/d9be6a1e-eaaa-11e8-9f32-f2801f1b9fd1.png'),
     title: "C'était si facile ...",
     description: "T'es bonne relation avec la COCU te permette d'avoir une réduction sur les prix sans trop de soucis. L'ULB est prête à rembourser une partie des fûts d'alléger pour rembourser les cercles de leur consommation d'alcool responsable.",
-    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    next: "1a190c59-9560-454c-a1c6-42ecd5f99620",
   },
   {
     id: "8fdf813e-eaab-11e8-9f32-f2801f1b9fd1",
     title: "Gros désaccord ...",
     description: "Aucun cercle n'est prêt à vous suivre, leurs mots sont les suivant: \"C'est pas à nous d'être responsable de la consommation d'alcool des gens, ils ont qu'à savoir boire\".",
-    next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    next: "1a190c59-9560-454c-a1c6-42ecd5f99620",
+  },
+
+  {
+    id: "1a190c59-9560-454c-a1c6-42ecd5f99620",
+    uri: require('../assets/img/story/1a190c59-9560-454c-a1c6-42ecd5f99620.png'),
+    title: "Enfin un thème pour la St-V ?",
+    description: "Au bout de plusieurs réunion ton VPE a réussis à mettre les cercles d'accord sur un thème pour la ST-V qui concerne la communauté LGBTQI+. Un cercle vient néenmoins souligner que le thème peut potentiellement amener des décors qui sont homophobes. En panique que fais-tu ? Tu restes sur tes positions, car si les cercles agissent de la sorte ça prouve d'autant plus que le thème est d’actualité et changer les mentalités ou tu décides de changer le thème in extremis ?",
+    left: {
+      text: "Garder",
+      stats: { ace: +5, ulb: +10, sponsors: -0, cercles: +10 },
+      next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    },
+    right: {
+      text: "Changer",
+      stats: { ace: -10, ulb: -10, sponsors: -0, cercles: -10 },
+      next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
+    },
   },
 
   // CP ulb coopération
