@@ -219,7 +219,7 @@ const StoryAssets = [
     id: "1a190c59-9560-454c-a1c6-42ecd5f99620",
     uri: require('../assets/img/story/1a190c59-9560-454c-a1c6-42ecd5f99620.png'),
     title: "Enfin un thème pour la St-V ?",
-    description: "Au bout de plusieurs réunion ton VPE a réussis à mettre les cercles d'accord sur un thème pour la ST-V qui concerne la communauté LGBTQI+. Un cercle vient néenmoins souligner que le thème peut potentiellement amener des décors qui sont homophobes. En panique que fais-tu ? Tu restes sur tes positions, car si les cercles agissent de la sorte ça prouve d'autant plus que le thème est d’actualité et changer les mentalités ou tu décides de changer le thème in extremis ?",
+    description: "Au bout de plusieurs réunions ton VPE a réussi à mettre les cercles d'accord sur un thème pour la ST-V qui concerne la communauté LGBTQI+. Un cercle vient néanmoins souligner que le thème peut potentiellement amener des décors qui sont homophobes. En panique que fais-tu ? Tu restes sur tes positions, car si les cercles agissent de la sorte ça prouve d'autant plus que le thème est d’actualité et changer les mentalités est nécessaire ou tu décides de changer de thème in extremis ?",
     left: {
       text: "Garder",
       stats: { ace: +5, ulb: +10, sponsors: -0, cercles: +10 },
@@ -271,7 +271,7 @@ const StoryAssets = [
     id: "b9951840-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/b9951840-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-    description: "Tu as fait tête à l'ULB qui à interdit les boissons énergisantes. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
+    description: "Tu as tenu tête à l'ULB qui à interdit les boissons énergisantes. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
     next: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
   },
   {
