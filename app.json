@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "supremacy",
+    "name": "Supremacy",
     "description": "Un jeu qui te met dans la peau d'un délégué de l'ACE le temps d'un swipe",
     "slug": "supremacy",
     "privacy": "public",
@@ -16,6 +16,9 @@
     },
     "androidStatusBar": {
       "backgroundColor": "#231402"
+    },
+    "android": {
+      "package": "stv.supremacy"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
