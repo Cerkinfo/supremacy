@@ -3,7 +3,7 @@ import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'rea
 import { Header, Footer, StoryView, StoryImageView, AnimatedView, ButtonScreen } from '../components';
 import { Container, Text, Body, Button } from 'native-base';
 import { Subscribe } from 'unstated';
-import { StatsContainer, StoryContainer } from '../containers';
+import { StatsContainer, StoryContainer, AppStateContainer } from '../containers';
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../settings';
 import theme from '../style/theme.style'
 
@@ -14,34 +14,46 @@ export default class _ extends React.Component {
     this.position = new Animated.ValueXY();
   }
 
+  getView(story, stats, state) {
+    let x;
+    if (x = stats.isGameOver()) {
+      state.switchToGameOver(x);
+      return null;
+    } else if (story.isSwipable()) {
+      return (
+        <View style={{ flex: 2, backgroundColor: theme.SECONDARY_COLOR }}>
+          <AnimatedView story={story} stats={stats} position={this.position}>
+            <StoryImageView style={{height: SCREEN_HEIGHT/3, width: SCREEN_WIDTH}}/>
+          </AnimatedView>
+        </View>
+      );
+    } else {
+      return (
+        <View style={{ flex: 2, backgroundColor: theme.SECONDARY_COLOR, }}>
+          <View style={{ flex: 3, justifyContent: 'flex-start', top: "5%", height: "95%", width: "80%", left: "10%", }}>
+            <StoryImageView style={{height: SCREEN_HEIGHT/4, width: SCREEN_WIDTH}}/>
+          </View>
+          <View style={{ justifyContent: 'flex-end', width: '90%', margin: 20, padding: 10, height: 60}}>
+            <Button
+              block
+              style={{ flex:3, alignItems: 'center', backgroundColor: theme.DISABLED_COLOR, }}
+              onPress={() => story.goNext()}
+            >
+              <Text style={{fontFamily: 'Retron2000', color: 'black', }}>Suivant</Text>
+            </Button>
+          </View>
+        </View>
+      );
+    }
+  }
+
   render() {
     return (
       <Container>
         <Header/>
         <StoryView style={{ flex: 1 }}/>
-        <Subscribe to={[StoryContainer, StatsContainer]}>
-          {(story, stats) => (story.isSwipable() ? (
-              <View style={{ flex: 2, backgroundColor: theme.SECONDARY_COLOR }}>
-                <AnimatedView story={story} stats={stats} position={this.position}>
-                  <StoryImageView style={{height: SCREEN_HEIGHT/3, width: SCREEN_WIDTH}}/>
-                </AnimatedView>
-              </View>
-            ) : (
-              <View style={{ flex: 2, backgroundColor: theme.SECONDARY_COLOR, }}>
-                <View style={{ flex: 3, justifyContent: 'flex-start', top: "5%", height: "95%", width: "80%", left: "10%", }}>
-                  <StoryImageView style={{height: SCREEN_HEIGHT/4, width: SCREEN_WIDTH}}/>
-                </View>
-                <View style={{ justifyContent: 'flex-end', width: '90%', margin: 20, padding: 10, height: 60}}>
-                  <Button
-                    block
-                    style={{ flex:3, alignItems: 'center', backgroundColor: theme.DISABLED_COLOR, }}
-                    onPress={() => story.goNext()}
-                  >
-                    <Text style={{fontFamily: 'Retron2000', color: 'black', }}>Suivant</Text>
-                  </Button>
-                </View>
-              </View>
-          ))}
+        <Subscribe to={[StoryContainer, StatsContainer, AppStateContainer]}>
+          {(story, stats, state) => (this.getView(story, stats, state))}
         </Subscribe>
         <Footer/>
       </Container>
