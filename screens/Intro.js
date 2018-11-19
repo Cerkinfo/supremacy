@@ -71,10 +71,10 @@ const slides = [
   {
     key: '3',
     title: 'Les décisions ...',
-    text: 'Chacune de vos décisions va influencer l\'avis que des acteurs ont sur vous. À vous d\'essayer d\'avoir le meilleurs score pour chaque parties.',
+    text: 'Chacune de vos décisions va influencer l\'avis que des acteurs ont sur vous. À vous d\'essayer d\'avoir le meilleurs score pour chaque partie.',
     list: [
-      { id: 1, text: 'Ce logo représente l\'avis du comité ACE envers vous.', image: require('../assets/img/logos/ace.png'), },
-      { id: 2, text: 'Celui ci représente le taux de satisfaction de l\'ULB.', image: require('../assets/img/logos/ulb.png'), },
+      { id: 1, text: 'Ce logo représente l\'avis du comité ACE envers vous', image: require('../assets/img/logos/ace.png'), },
+      { id: 2, text: 'Celui ci représente le taux de satisfaction de l\'ULB', image: require('../assets/img/logos/ulb.png'), },
       { id: 3, text: 'Les entreprises privées et sponsors, elles aussi, doivent être satisfaites par vos décisions', image: require('../assets/img/logos/sponsor.png'), },
       { id: 4, text: 'Ce dernier représente l\'avis qu\'ont les cercles de vous', image: require('../assets/img/logos/cercles.png'), },
     ],
