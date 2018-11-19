@@ -78,7 +78,6 @@ export default class _ extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log(this.animationRunning)
     this.anim()
   }
 

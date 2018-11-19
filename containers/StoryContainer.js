@@ -189,7 +189,7 @@ const StoryAssets = [
     id: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1.png'),
     title: "Une idée originale ?",
-    description: "Après qu'BevIn soit venu présenter son agenda au près des cercles, notamment sur les bières avec un taux d'alcool plus faible, il te vient l'idée d'en servir en période de baptême pour réduire les risques lié à la consommation d'alcool. Mais le prix est un frein, qui va payer une partie des fûts ?",
+    description: "Après que BevIn soit venu présenter son agenda au près des cercles, notamment sur les bières avec un taux d'alcool plus faible, il te vient l'idée d'en servir en période de baptême pour réduire les risques lié à la consommation d'alcool. Mais le prix est un frein, qui va payer une partie des fûts ?",
     left: {
       text: "L'ULB",
       stats: { ace: +10, ulb: -10, sponsors: +20, cercles: +5 },
