@@ -15,11 +15,12 @@ export default class _ extends React.Component {
   }
 
   getView(story, stats, state) {
-    let x;
-    if (x = stats.isGameOver()) {
-      state.switchToGameOver(x);
-      return null;
-    } else if (story.isSwipable()) {
+    // let x;
+    // if (x = stats.isGameOver()) {
+    //   state.switchToGameOver(x);
+    //   return null;
+    // } else if (story.isSwipable()) {
+    if (story.isSwipable()) {
       return (
         <View style={{ flex: 2, backgroundColor: theme.SECONDARY_COLOR }}>
           <AnimatedView story={story} stats={stats} position={this.position}>
