@@ -25,12 +25,12 @@ const StoryAssets = [
     description: "Bonjour au nouveau prez de l'ACE ! Fraichement élu par l'AG car personne ne veut se présenter à ce poste et tous les anciens ont déserté le comité, tu dois faire la première décision de ton mandat. Que faire ce soir ?",
     left: {
       text: "Gauguin",
-      stats: { ace: +15, ulb: -5, sponsors: -5, cercles: +15 },
+      stats: { ace: +10, ulb: -5, sponsors: -5, cercles: +15 },
       next: "4fd1cbda-eab3-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "Dormir",
-      stats: { ace: -10, ulb: +5, sponsors: -0, cercles: -15 },
+      stats: { ace: -20, ulb: +5, sponsors: -0, cercles: -15 },
       next: "4fd1cbda-eab3-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -59,7 +59,7 @@ const StoryAssets = [
     description: "Tu prends tes marques sur le groupe facebook, tu essayes de marquer le coup directement en organisant une première rencontre avec les autres présidents pour créer une fausse cohésion de groupe. Que faire ? Bière ou pizza ?",
     left: {
       text: "Bière",
-      stats: { ace: +2, ulb: +0, sponsors: +0, cercles: +9 },
+      stats: { ace: +0, ulb: -5, sponsors: +0, cercles: +9 },
       next: "44db8aaa-eab7-11e8-9f32-f2801f1b9fd1",
     },
     right: {
@@ -82,7 +82,7 @@ const StoryAssets = [
     },
     right: {
       text: "Ne pas signer",
-      stats: { ace: +0, ulb: +0, sponsors: +15, cercles: -20 },
+      stats: { ace: -10, ulb: +0, sponsors: +15, cercles: -20 },
       next: "9626d558-eab8-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -107,7 +107,7 @@ const StoryAssets = [
     description: "Le jour du rassemblement tu te dis que ça serait pas une mauvaise idée de faire acte de présence pour représenter ton cercle. Une envie soudaine de t'en jeter une petite (bière) apparait néanmoins. Où vas-tu ?",
     left: {
       text: "Préfabs",
-      stats: { ace: +5, ulb: +10, sponsors: +0, cercles: +5 },
+      stats: { ace: -5, ulb: -10, sponsors: +0, cercles: +5 },
       next: "6d22ecc2-eabe-11e8-9f32-f2801f1b9fd1",
     },
     right: {
@@ -138,12 +138,12 @@ const StoryAssets = [
     description: "Première réunion, déjà des décisions à prendre concernant les baptêmes, il faut négocier avec l'ULB pour trouver un endroit où faire les baptêmes. Où le faire ?",
     left: {
       text: "JEFKE",
-      stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
+      stats: { ace: +0, ulb: +10, sponsors: +0, cercles: -20 },
       next: "053a8de6-eab3-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "JEFKE",
-      stats: { ace: +5, ulb: +10, sponsors: -0, cercles: -20 },
+      stats: { ace: +0, ulb: +10, sponsors: -0, cercles: -20 },
       next: "053a8de6-eab3-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -155,12 +155,12 @@ const StoryAssets = [
     description: "Toujours dans l'optique d'avoir une bonne cohésion au sein du groupe des présidents, tu te fixes comme objectif de commander les pulls prez au plus tôt. Tu décides de faire le design, mais tu fais un dessin qui inclut tout le monde ou qui te met en avant ?",
     left: {
       text: "Me mettre en avant",
-      stats: { ace: +2, ulb: +8, sponsors: +10, cercles: -15 },
+      stats: { ace: +0, ulb: +8, sponsors: +10, cercles: -15 },
       next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "Inclusif",
-      stats: { ace: +3, ulb: -4, sponsors: -2, cercles: +10 },
+      stats: { ace: +5, ulb: -4, sponsors: -2, cercles: +10 },
       next: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -178,7 +178,7 @@ const StoryAssets = [
     },
     right: {
       text: "Faire un GT",
-      stats: { ace: +15, ulb: -10, sponsors: -15, cercles: +0 },
+      stats: { ace: +0, ulb: -10, sponsors: -15, cercles: +0 },
       next: "f1cecf56-eaa8-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -191,12 +191,12 @@ const StoryAssets = [
     description: "Après que BevIn soit venu présenter son agenda au près des cercles, notamment sur les bières avec un taux d'alcool plus faible, il te vient l'idée d'en servir en période de baptême pour réduire les risques lié à la consommation d'alcool. Mais le prix est un frein, qui va payer une partie des fûts ?",
     left: {
       text: "L'ULB",
-      stats: { ace: +10, ulb: -10, sponsors: +20, cercles: +5 },
+      stats: { ace: +5, ulb: -10, sponsors: +20, cercles: +5 },
       next: "d9be6a1e-eaaa-11e8-9f32-f2801f1b9fd1",
     },
     right: {
       text: "Les cercles",
-      stats: { ace: +2, ulb: +10, sponsors: -15, cercles: -15 },
+      stats: { ace: -5, ulb: 10, sponsors: -15, cercles: -15 },
       next: "8fdf813e-eaab-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -227,7 +227,7 @@ const StoryAssets = [
     },
     right: {
       text: "Le refuser",
-      stats: { ace: +2, ulb: +10, sponsors: -15, cercles: +0 },
+      stats: { ace: +0, ulb: +10, sponsors: -15, cercles: +0 },
       next: "d217d664-eab0-11e8-9f32-f2801f1b9fd1",
     },
   },
@@ -253,7 +253,7 @@ const StoryAssets = [
     description: "Au bout de plusieurs réunions, ton VPE a réussi à mettre les cercles d'accord sur un thème pour la St-V qui concerne la communauté LGBTQI+. Un cercle vient néanmoins souligner que le thème peut potentiellement amener des décors qui sont homophobes. En panique que fais-tu ? Tu restes sur tes positions, car si les cercles agissent de la sorte ça prouve d'autant plus que le thème est d’actualité et changer les mentalités est nécessaire ou tu décides de changer de thème in extremis ?",
     left: {
       text: "Garder",
-      stats: { ace: +5, ulb: +10, sponsors: -0, cercles: +10 },
+      stats: { ace: +0, ulb: +10, sponsors: -0, cercles: +10 },
       next: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
     },
     right: {
@@ -360,7 +360,7 @@ const StoryAssets = [
     },
     right: {
       text: "Faire un GT",
-      stats: { ace: +15, ulb: +10, sponsors: +5, cercles: +5 },
+      stats: { ace: 0, ulb: +10, sponsors: +5, cercles: +5 },
       next: "",
     },
   },
