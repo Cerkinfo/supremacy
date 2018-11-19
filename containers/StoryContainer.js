@@ -422,6 +422,6 @@ export default class _ extends Container {
   }
 
   reset() {
-    this.setState(DEFAULT);
+    this.goToApp();
   }
 }
