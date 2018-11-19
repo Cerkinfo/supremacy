@@ -353,7 +353,7 @@ const StoryAssets = [
     id: "d9644646-eb50-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/d9644646-eb50-11e8-9f32-f2801f1b9fd1.png'),
     title: "Mais pour qui ils se prennent ?",
-    description: "Le jour de la St-V un cercle se permet de faire un jeu vidéo qui critique nos agissements. Comment réagir ? On laisse tomber parce que ça fait partie de l'esprit critique de la StV ou on s'en prend à eux, ils vont quand même pas tenir longtemps",
+    description: "Le jour de la St-V un cercle se permet de faire un jeu vidéo qui critique nos agissements. Comment réagir ? On laisse tomber parce que ça fait partie de l'esprit de la StV ou on s'en prend à eux, c'est vrai qu'ils vont pas réussir à tenir longtemps",
     left: {
       text: "Laisser tomber",
       stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
