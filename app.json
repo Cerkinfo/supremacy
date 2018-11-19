@@ -20,7 +20,7 @@
     "android": {
       "package": "stv.supremacy",
       "permissions": [],
-      "versionCode": 4
+      "versionCode": 5
     },
     "updates": {
       "fallbackToCacheTimeout": 0
