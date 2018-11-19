@@ -171,7 +171,7 @@ const StoryAssets = [
     id: "5f97e4be-eacc-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/5f97e4be-eacc-11e8-9f32-f2801f1b9fd1.png'),
     title: "Le cas écocups",
-    description: "L'ensemble des cercles se sentant de plus en plus concerné par la consommation de déchet dans la JEFKE posent de plus en plus de question sur l'état du projet visant à la fin de l'utilisation de gobelets jetable. Il leur faut une réponse que dis-tu ? Les premiers points qui te viennent à l'esprit sont le manque d'infra pour stocker et nettoyer toute ces écocups à la Jefke, le second est la dangerosité de recevoir une écocup sur la tête.",
+    description: "L'ensemble des cercles se sentant concerné par la consommation de déchet dans la Jefke posent de plus en plus de question sur l'état du projet visant à la fin de l'utilisation de gobelets jetable. Il leur faut une réponse que dis-tu ? Les premiers points qui te viennent à l'esprit sont le manque d'infra pour stocker et nettoyer toute ces écocups à la Jefke, le second est la dangerosité de recevoir une écocup sur la tête.",
     left: {
       text: "Les infras",
       stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +15 },
