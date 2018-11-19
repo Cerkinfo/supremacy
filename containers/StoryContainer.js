@@ -23,7 +23,7 @@ const StoryAssets = [
     id: 1,
     uri: require('../assets/img/story/1.jpg'),
     title: 'Bienvenu au nouveau prez !',
-    description: "Bonjour nouveau prez ! Fraichement élu par l'AG car personne ne veut se présenter à ce poste et tous les anciens ont déserté le comité, tu dois faire la première décision de ton mandat. Que faire ce soir ?",
+    description: "Bonjour au nouveau prez de l'ACE ! Fraichement élu par l'AG car personne ne veut se présenter à ce poste et tous les anciens ont déserté le comité, tu dois faire la première décision de ton mandat. Que faire ce soir ?",
     left: {
       text: "Gauguin",
       stats: { ace: +15, ulb: -5, sponsors: -5, cercles: +15 },
@@ -74,7 +74,7 @@ const StoryAssets = [
     id: "053a8de6-eab3-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/053a8de6-eab3-11e8-9f32-f2801f1b9fd1.png'),
     title: 'Pull prez ...',
-    description: "Toujours dans l'optique d'avoir une bonne cohésion au seins du groupe des présidents, tu te fixes comme objectif de commander les pulls prez au plus tôt. Tu décides de faire le design, mais tu fais un dessin qui inclut tout le monde ou qui te met en avant ?",
+    description: "Toujours dans l'optique d'avoir une bonne cohésion au sein du groupe des présidents, tu te fixes comme objectif de commander les pulls prez au plus tôt. Tu décides de faire le design, mais tu fais un dessin qui inclut tout le monde ou qui te met en avant ?",
     left: {
       text: "Me mettre en avant",
       stats: { ace: +2, ulb: +8, sponsors: +10, cercles: -15 },
@@ -91,7 +91,7 @@ const StoryAssets = [
     id: "eb5de058-eab2-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/eb5de058-eab2-11e8-9f32-f2801f1b9fd1.png'),
     title: "TD Sectarisé ?",
-    description: "Première réunion, déjà les premières décisions à prendre concernant le baptême, il faut négocier avec l'ULB pour trouver un endroit où faire les baptêmes. Où le faire ?",
+    description: "Première réunion, déjà des décisions à prendre concernant les baptêmes, il faut négocier avec l'ULB pour trouver un endroit où faire les baptêmes. Où le faire ?",
     left: {
       text: "JEFKE",
       stats: { ace: +5, ulb: +10, sponsors: +0, cercles: -20 },
@@ -109,7 +109,7 @@ const StoryAssets = [
     id: "44db8aaa-eab7-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/44db8aaa-eab7-11e8-9f32-f2801f1b9fd1.png'),
     title: "Il est venu le temps de militer ?",
-    description: "Comme à son habitude le BEA demande l'avis des cercles de l'ACE pour signer une charte commune pour le refinancement de l'enseignement. L'ACE doit aussi se positionner par apport à ça.",
+    description: "Comme à son habitude, le BEA demande l'avis des cercles de l'ACE pour signer une charte commune pour le refinancement de l'enseignement. L'ACE doit aussi se positionner par apport à ça.",
     left: {
       text: "Signer",
       stats: { ace: +5, ulb: +0, sponsors: -5, cercles: +0 },
@@ -205,7 +205,7 @@ const StoryAssets = [
     id: "d9be6a1e-eaaa-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/d9be6a1e-eaaa-11e8-9f32-f2801f1b9fd1.png'),
     title: "C'était si facile ...",
-    description: "T'es bonne relation avec la COCU te permette d'avoir une réduction sur les prix sans trop de soucis. L'ULB est prête à rembourser une partie des fûts d'alléger pour rembourser les cercles de leur consommation d'alcool responsable.",
+    description: "Tes bonnes relations avec la COCU te permettent d'avoir une réduction sur les prix sans trop de soucis. L'ULB est prête à rembourser une partie des fûts d'allégés pour rembourser les cercles de leur consommation d'alcool responsable.",
     next: "1a190c59-9560-454c-a1c6-42ecd5f99620",
   },
   {
@@ -219,7 +219,7 @@ const StoryAssets = [
     id: "1a190c59-9560-454c-a1c6-42ecd5f99620",
     uri: require('../assets/img/story/1a190c59-9560-454c-a1c6-42ecd5f99620.png'),
     title: "Enfin un thème pour la St-V ?",
-    description: "Au bout de plusieurs réunions ton VPE a réussi à mettre les cercles d'accord sur un thème pour la ST-V qui concerne la communauté LGBTQI+. Un cercle vient néanmoins souligner que le thème peut potentiellement amener des décors qui sont homophobes. En panique que fais-tu ? Tu restes sur tes positions, car si les cercles agissent de la sorte ça prouve d'autant plus que le thème est d’actualité et changer les mentalités est nécessaire ou tu décides de changer de thème in extremis ?",
+    description: "Au bout de plusieurs réunions, ton VPE a réussi à mettre les cercles d'accord sur un thème pour la St-V qui concerne la communauté LGBTQI+. Un cercle vient néanmoins souligner que le thème peut potentiellement amener des décors qui sont homophobes. En panique que fais-tu ? Tu restes sur tes positions, car si les cercles agissent de la sorte ça prouve d'autant plus que le thème est d’actualité et changer les mentalités est nécessaire ou tu décides de changer de thème in extremis ?",
     left: {
       text: "Garder",
       stats: { ace: +5, ulb: +10, sponsors: -0, cercles: +10 },
@@ -237,7 +237,7 @@ const StoryAssets = [
     id: "e7daa252-eab4-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/e7daa252-eab4-11e8-9f32-f2801f1b9fd1.png'),
     title: "Qui a volé ?",
-    description: "On te transmet que le panneau ULB coopération a été volé après un TD. Un suspect te parait évident mais tu n'as aucune preuve pour le dénonce. Que fais-tu ? Faire un groupe de travail (GT) ou dénoncer le CP ?",
+    description: "On te transmet que le panneau ULB coopération a été volé après un TD. Un suspect te parait évident mais tu n'as aucune preuve pour le dénoncer. Que fais-tu ? Faire un groupe de travail (GT) ou dénoncer le CP ?",
     left: {
       text: "Le CP",
       stats: { ace: -5, ulb: +20, sponsors: +5, cercles: -25 },
@@ -255,7 +255,7 @@ const StoryAssets = [
     id: "8b5c8076-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/8b5c8076-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "ACE la futur startup nation ?",
-    description: "Comme d'habitude une énième startup veut profiter de la tribune offerte par les réunions ACE au près des étudiants pour venir faire la promotion de son nouveau produit. Ici il s'agit d'une boisson énergisante soi-disant naturelle et bio. Il s'agit surtout d'un ancien membre du comité de l'ACE. Qu'est-ce que tu fais ?",
+    description: "Comme d'habitude une énième startup veut profiter de la tribune offerte par les réunions ACE auprès des étudiants pour venir faire la promotion de son nouveau produit. Ici il s'agit d'une boisson énergisante soi-disant naturelle et bio. Il s'agit surtout d'un ancien membre du comité de l'ACE. Qu'est-ce que tu fais ?",
     left: {
       text: "L'inviter",
       stats: { ace: +10, ulb: -10, sponsors: +20, cercles: -15 },
@@ -271,7 +271,7 @@ const StoryAssets = [
     id: "b9951840-eab0-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/b9951840-eab0-11e8-9f32-f2801f1b9fd1.png'),
     title: "",
-    description: "Tu as tenu tête à l'ULB qui à interdit les boissons énergisantes. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
+    description: "Tu as tenu tête à l'ULB qui a interdit les boissons énergisantes. Leur coup de pub a bien fonctionné. Tellement qu'ils fournissent des boissons pour votre prochain team building. Comme quoi parfois ça paye.",
     next: "6b262dbc-eac3-11e8-9f32-f2801f1b9fd1",
   },
   {
@@ -299,6 +299,23 @@ const StoryAssets = [
     },
   },
 
+  {
+    id: "",
+    uri: require('../assets/img/story/.png'),
+    title: "",
+    description: "",
+    left: {
+      text: "",
+      stats: { ace: -5, ulb: +0, sponsors: +30, cercles: -30 },
+      next: "",
+    },
+    right: {
+      text: "",
+      stats: { ace: +5, ulb: -0, sponsors: -30, cercles: +15 },
+      next: "",
+    },
+  },
+
   // Aggressions autours de la JEFKE
   {
     id: "d8e523bc-eac8-11e8-9f32-f2801f1b9fd1",
@@ -322,7 +339,7 @@ const StoryAssets = [
     id: "9f38edf6-ead2-11e8-9f32-f2801f1b9fd1",
     uri: require('../assets/img/story/9f38edf6-ead2-11e8-9f32-f2801f1b9fd1.png'),
     title: "C'est ma tournée!",
-    description: "Le lendemain de la NTV, le trésorier s'affole! Un trou de plusieurs centaines d'euros dans ses comptes. Les images de surveillance montrent 1/4 de ton comité se servant dans le stock de champagne de la réserve. J'en parle à la prochaine réunion ACE ou j'attends l'AG de fin d'année pour en parler?",
+    description: "Le lendemain de la NTV, le trésorier s'affole! Un trou de plusieurs centaines d'euros dans ses comptes. Les images de surveillance montrent 1/4 de ton comité se servant dans le stock de champagne de la réserve. Tu en parles à la prochaine réunion ACE ou tu attends l'AG de fin d'année ?",
     left: {
       text: "Parler",
       stats: { ace: -15, ulb: -5, sponsors: +0, cercles: +15 },
