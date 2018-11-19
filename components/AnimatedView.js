@@ -36,39 +36,54 @@ export default class _ extends React.Component {
       outputRange: [1, 0, 0],
       extrapolate: 'clamp',
     });
+
+    this.animationRunning = false;
+    this.anim = this.anim.bind(this)
+  }
+
+  anim() {
+    if (!this.animationRunning) {
+      Animated.sequence([
+        Animated.delay(1000),
+        Animated.loop(
+          Animated.sequence([
+            Animated.timing(
+              this.props.position.x,
+              {
+                toValue: SCREEN_WIDTH / 4,
+                duration: 500,
+              }
+            ),
+            Animated.timing(
+              this.props.position.x,
+              {
+                toValue: -SCREEN_WIDTH / 4,
+                duration: 1000,
+                delay: 500,
+              }
+            ),
+            Animated.timing(
+              this.props.position.x,
+              {
+                toValue: 0,
+                duration: 500,
+                delay: 500,
+              }
+            )
+          ])
+        )
+      ]).start()
+      this.animationRunning = true;
+    }
+  }
+
+  componentDidUpdate() {
+    console.log(this.animationRunning)
+    this.anim()
   }
 
   componentDidMount() {
-    Animated.sequence([
-      Animated.delay(500),
-      Animated.loop(
-        Animated.sequence([
-          Animated.timing(
-            this.props.position.x,
-            {
-              toValue: SCREEN_WIDTH / 4,
-              duration: 500,
-            }
-          ),
-          Animated.timing(
-            this.props.position.x,
-            {
-              toValue: -SCREEN_WIDTH / 4,
-              duration: 1000,
-              delay: 500,
-            }
-          ),
-          Animated.timing(
-            this.props.position.x,
-            {
-              toValue: 0,
-              duration: 500,
-              delay: 500,
-            }
-          )
-        ])
-      )
-    ]).start()
+    this.anim()
   }
 
   componentWillMount() {
@@ -89,6 +104,7 @@ export default class _ extends React.Component {
             this.props.story.goNext('right');
             this.props.position.setValue({ x: 0, y: 0 });
             if (this.props.swipeCallback) this.props.swipeCallback('right');
+            this.animationRunning = false
           })
         } else if (gestureState.dx < -120) {
           Animated.spring(this.props.position, {
@@ -98,6 +114,7 @@ export default class _ extends React.Component {
             this.props.story.goNext('left');
             this.props.position.setValue({ x: 0, y: 0 });
             if (this.props.swipeCallback) this.props.swipeCallback('left');
+            this.animationRunning = false
           })
         } else {
           Animated.spring(this.props.position, {
