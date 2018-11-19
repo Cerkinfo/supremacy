@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'unstated';
 
-
 const StoryAssets = [
   {
     id: 0,
@@ -406,7 +405,7 @@ export default class _ extends Container {
   goNext(direction) {
     const newUuid = this.isSwipable() ? this.state.story[direction].next : this.state.story.next
 
-    if (newUuid == "" || newUuid == null) {
+    if (newUuid === "" || newUuid === null) {
       this.set(null);
     } else {
       this.set(newUuid);

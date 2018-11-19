@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'unstated';
-
+import { ACEHigh, ACELow, CercleHigh, CercleLow, SponsorHigh, SponsorLow, ULBHigh, ULBLow } from '../screens/GameOver';
 
 const DEFAULT = {
   old: {
@@ -20,6 +20,29 @@ export default class _ extends Container {
 
   diff(x, y) {
     return Math.max(Math.min(x + y, 100), 0);
+  }
+
+  isGameOver() {
+    console.log(this.state);
+    if (this.state.ace == 100) {
+      return (<ACEHigh />)
+    } else if (this.state.ace == 0) {
+      return (<ACELow />)
+    } else if (this.state.ulb == 100) {
+      return (<ULBHigh />)
+    } else if (this.state.ulb == 0) {
+      return (<ULBLow />)
+    } else if (this.state.sponsors == 100) {
+      return (<SponsorHigh />)
+    } else if (this.state.sponsors == 0) {
+      return (<SponsorLow />)
+    } else if (this.state.cercles == 100) {
+      return (<CercleHigh />)
+    } else if (this.state.cercles == 0) {
+      return (<CercleLow />)
+    } else {
+      return null;
+    }
   }
 
   changeValue(diff) {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Subscribe } from 'unstated';
 import { AppStateContainer, StatsContainer, StoryContainer } from '../../containers';
+import { ButtonScreen } from '../../components';
 
 export default ({image, text}) => (
   <Subscribe to={[AppStateContainer, StatsContainer, StoryContainer]}>

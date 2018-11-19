@@ -1,16 +1,16 @@
 import React from 'react';
 import { Container } from 'unstated';
-import { Intro, LandingPage, Main } from '../screens';
+import { Credit, Intro, LandingPage, Main } from '../screens';
 
 export default class _ extends Container {
   state = {
     page: <LandingPage/>,
   };
 
-  switchToGameOver() {
-    // this.setState({
-    //   page: ,
-    // });
+  switchToGameOver(screen) {
+    this.setState({
+      page: screen,
+    });
   }
 
   switchToApp() {
