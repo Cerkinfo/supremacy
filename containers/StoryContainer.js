@@ -3,23 +3,23 @@ import { Container } from 'unstated';
 
 const StoryAssets = [
   {
-    id: 0,
+    id: "b70d622c-2e13-4d3b-85c4-4135c08f7fdd",
     uri: require('../assets/img/story/0.png'),
     title: "",
     description: "",
     left: {
       text: "Go !",
       stats: { ace: +0, ulb: +0, sponsors: +0, cercles: +0 },
-      next: 1,
+      next: "c3ed58dc-ec2e-11e8-8eb2-f2801f1b9fd1",
     },
     right: {
       text: "Attendre ..." ,
       stats: { ace: -0, ulb: -0, sponsors: -0, cercles: -0 },
-      next: 0,
+      next: "b70d622c-2e13-4d3b-85c4-4135c08f7fdd",
     },
   },
   {
-    id: 1,
+    id: "c3ed58dc-ec2e-11e8-8eb2-f2801f1b9fd1",
     uri: require('../assets/img/story/1.jpg'),
     title: 'Bienvenu au nouveau prez !',
     description: "Bonjour au nouveau prez de l'ACE ! Fraichement élu par l'AG car personne ne veut se présenter à ce poste et tous les anciens ont déserté le comité, tu dois faire la première décision de ton mandat. Que faire ce soir ?",
@@ -413,11 +413,11 @@ export default class _ extends Container {
   }
 
   goToApp() {
-    this.set(1);
+    this.set("c3ed58dc-ec2e-11e8-8eb2-f2801f1b9fd1");
   }
 
   goToIntro() {
-    this.set(0);
+    this.set("b70d622c-2e13-4d3b-85c4-4135c08f7fdd");
   }
 
   reset() {

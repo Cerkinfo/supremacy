@@ -23,7 +23,6 @@ export default class _ extends Container {
   }
 
   isGameOver() {
-    console.log(this.state);
     if (this.state.ace == 100) {
       return (<ACEHigh />)
     } else if (this.state.ace == 0) {

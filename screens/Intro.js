@@ -194,7 +194,7 @@ export default class App extends React.Component {
           <AppIntroSlider
             slides={slides}
             renderItem={this._renderItem}
-            onSkip={() => {story.set(1); state.switchToApp()}}
+            onSkip={() => {story.goToApp(); state.switchToApp()}}
             nextLabel="Suivant"
             skipLabel="Passer"
             showSkipButton
