@@ -18,7 +18,9 @@
       "backgroundColor": "#231402"
     },
     "android": {
-      "package": "stv.supremacy"
+      "package": "stv.supremacy",
+      "permissions": [],
+      "versionCode": 4
     },
     "updates": {
       "fallbackToCacheTimeout": 0
