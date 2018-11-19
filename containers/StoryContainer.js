@@ -299,23 +299,6 @@ const StoryAssets = [
     },
   },
 
-  {
-    id: "",
-    uri: require('../assets/img/story/.png'),
-    title: "",
-    description: "",
-    left: {
-      text: "",
-      stats: { ace: -5, ulb: +0, sponsors: +30, cercles: -30 },
-      next: "",
-    },
-    right: {
-      text: "",
-      stats: { ace: +5, ulb: -0, sponsors: -30, cercles: +15 },
-      next: "",
-    },
-  },
-
   // Aggressions autours de la JEFKE
   {
     id: "d8e523bc-eac8-11e8-9f32-f2801f1b9fd1",
