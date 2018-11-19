@@ -8,7 +8,7 @@ export default () => (
     {state => (
       <ButtonScreen
         title="Supremacy"
-        subtitle="Dans la peau de l'ACE (l'Association des Capitaliste Extrêmiste) juqu'au bout des doigts."
+        subtitle="Dans la peau de l'ACE (l'Association des Capitalistes Extrêmiste) juqu'au bout des doigts."
         image={require('../assets/img/penne.png')}
         buttonText="Jouer"
         buttonCallback={() => state.switchToIntro()}
