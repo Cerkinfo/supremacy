@@ -3,8 +3,6 @@ Une application qui imite le jeu "Reigns" visant à simuler la vie d'un délégu
 
 # Le jeu
 
-
-
 # Set up
 
 This Android app is developped using [Expo](https://expo.io/).

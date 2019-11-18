@@ -4,8 +4,11 @@
     "description": "Un jeu qui te met dans la peau d'un délégué de l'ACE le temps d'un swipe",
     "slug": "supremacy",
     "privacy": "public",
-    "sdkVersion": "30.0.0",
-    "platforms": ["ios", "android"],
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

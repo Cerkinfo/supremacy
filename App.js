@@ -4,7 +4,7 @@ import { StyleSheet, View, Dimensions, Image, Animated, PanResponder } from 'rea
 import { Container, Button, Text } from 'native-base';
 import { Provider, Subscribe } from 'unstated';
 import { AppStateContainer, StoryContainer } from './containers';
-import { Credit, } from './screens';
+import { Credit } from './screens';
 
 export default class App extends React.Component {
   constructor(props) {

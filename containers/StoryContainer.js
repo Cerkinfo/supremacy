@@ -356,11 +356,284 @@ const StoryAssets = [
     left: {
       text: "Laisser tomber",
       stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
-      next: "",
+      next: "0eeebd60-a784-4c31-9d85-4759932e6ad1",
     },
     right: {
       text: "Faire un GT",
       stats: { ace: 0, ulb: +10, sponsors: +5, cercles: +5 },
+      next: "0eeebd60-a784-4c31-9d85-4759932e6ad1",
+    },
+  },
+  // UPDATE 2019 
+
+    // location litigieuse
+  {
+    id: "0eeebd60-a784-4c31-9d85-4759932e6ad1",
+    uri: require('../assets/img/story/0eeebd60-a784-4c31-9d85-4759932e6ad1.png'),
+    title: "Location Litigieuse",
+    description: "Un Ordre louant un cercle pour une soirée a déféqué dans un frigo de Oxedos et fracassé la porte d’entrée du dit cercle .... Que faire pour leur rendre justice ?",
+    left: {
+      text: "Accuser les EDD",
+      stats: { ace: +10, ulb: +5, sponsors: -5, cercles: +25 },
+      next: "72e2faaa-a1e0-4856-a189-aa6cca1dca95",
+    },
+    right: {
+      text: "Dénoncer les Gastériens",
+      stats: { ace: -5, ulb: +10, sponsors: -5, cercles: +10 },
+      next: "72e2faaa-a1e0-4856-a189-aa6cca1dca95",
+    },
+  },
+
+
+  // Sol Glissant en Jefke
+  {
+    id: "72e2faaa-a1e0-4856-a189-aa6cca1dca95",
+    uri: require('../assets/img/story/72e2faaa-a1e0-4856-a189-aa6cca1dca95.png'),
+    title: "Sol Glissant en Jefke",
+    description: "Des étudiants se sont blessées dans les WC de la Jefke. En effet, le sol devenu glissant suite à l'utilisation répétée. On vous répète que cela est dangereux pour le bien de tous mais que pour le réparer il faudrait attendre la période creuse sans TD pour éviter d'empêcher les festivités. Que faites -vous ?",
+    left: {
+      text: "Fermer dès maintenant",
+      stats: { ace: +5, ulb: +15, sponsors: -5, cercles: -15 },
+      next: "6fa04fbb-e21e-40c5-b7b2-1034e50ec4d1",
+    },
+    right: {
+      text: "Attendre la fin des TD",
+      stats: { ace: +5, ulb: -15, sponsors: 0, cercles: +5 },
+      next: "6fa04fbb-e21e-40c5-b7b2-1034e50ec4d1",
+    },
+  },
+
+  // Blues in distress
+  {
+    id: "6fa04fbb-e21e-40c5-b7b2-1034e50ec4d1",
+    uri: require('../assets/img/story/6fa04fbb-e21e-40c5-b7b2-1034e50ec4d1.png'),
+    title: "Blues in distress",
+    description: "En période de bleusaille, un bleu en TD te demande de l’affoner. En tant que président folklo, comment réagis-tu ?",
+    left: {
+      text: "Demander au bleu d'aller chercher des bières",
+      stats: { ace: +5, ulb: 0, sponsors: 0, cercles: +5 },
+      next: "89d6c5b1-0740-4376-9f79-440c4276de52",
+    },
+    right: {
+      text: "Affoner la demi-bière plate du bleu",
+      stats: { ace: +5, ulb: 0, sponsors: 0, cercles: -1 },
+      next: "89d6c5b1-0740-4376-9f79-440c4276de52",
+    },
+  },
+
+
+  // Chasse à la baleine
+  {
+    id: "89d6c5b1-0740-4376-9f79-440c4276de52",
+    uri: require('../assets/img/story/89d6c5b1-0740-4376-9f79-440c4276de52.png'),
+    title: "Chasse à la baleine",
+    description: "Suite aux importants travaux d’aménagement à côté de la Jefke pour faciliter l’accès à la future maison de retraite, les autorités de l’ULB décident d'aplatir la baleine. Étant un repère pour beaucoup d’étudiants, tu dois te positionner vis à vis de sa suppression.",
+    left: {
+      text: "Lancer une ASBL “Sauver la Baleine”",
+      stats: { ace: -5, ulb: -10, sponsors: -5, cercles: +15 },
+      next: "b85ffa0f-ca47-4300-ad97-db020fb3588c",
+    },
+    right: {
+      text: "Chercher une nouvelle Jefke",
+      stats: { ace: +5, ulb: +5, sponsors: +5, cercles: -5 },
+      next: "b85ffa0f-ca47-4300-ad97-db020fb3588c",
+    },
+  },
+
+  // Buffalo
+  {
+    id: "b85ffa0f-ca47-4300-ad97-db020fb3588c",
+    uri: require('../assets/img/story/b85ffa0f-ca47-4300-ad97-db020fb3588c.png'),
+    title: "Buffalo",
+    description: "Étant assez éreinté par ton rôle de président du décide d’aller en TD pour te changer les idées … À peine après t’être servi un verre, un pote voulant t’attirer dans un traquenard te crie “Buffalo” !",
+    left: {
+      text: "Affoner”",
+      stats: { ace: +2, ulb: 0, sponsors: 0, cercles: +5 },
+      next: "961f8721-6cf6-460d-b630-1fe4cffb0ccf",
+    },
+    right: {
+      text: "Euh non Geronimo",
+      stats: { ace: -2, ulb: 0, sponsors: 0, cercles: -5 },
+      next: "961f8721-6cf6-460d-b630-1fe4cffb0ccf",
+    },
+  },
+
+  // Sur le chemin d’Erasme 
+  {
+    id: "961f8721-6cf6-460d-b630-1fe4cffb0ccf",
+    uri: require('../assets/img/story/961f8721-6cf6-460d-b630-1fe4cffb0ccf.png'),
+    title: "Sur le chemin d’Erasme",
+    description: "Un étudiant du pôle santé (Erasme) intéressé à faire son baptême te demande de localiser le cercle le plus musclé de l'ULB. En tant que bon président, tu ... ",
+    left: {
+      text: "montres le CKO",
+      stats: { ace: +2, ulb: 0, sponsors: 0, cercles: +5 },
+      next: "047f4745-e2e6-4e49-9a7f-a3136a4d100e",
+    },
+    right: {
+      text: "montres l'ISEP",
+      stats: { ace: -2, ulb: 0, sponsors: 0, cercles: -5 },
+      next: "047f4745-e2e6-4e49-9a7f-a3136a4d100e",
+    },
+  },
+
+  // Musique en Jefke
+  {
+    id: "047f4745-e2e6-4e49-9a7f-a3136a4d100e",
+    uri: require('../assets/img/story/047f4745-e2e6-4e49-9a7f-a3136a4d100e.png'),
+    title: "Musique en Jefke",
+    description: "En réunion ACE, un président de cercle se plaint de la musique redondante en Jefke. Il voudrait y apporter du folklore propre à son cercle…  ",
+    left: {
+      text: "Pookie",
+      stats: { ace: -5, ulb: 0, sponsors: 0, cercles: -5 },
+      next: "8d5f36a5-17bb-4518-ae5c-4ef5e838cfa1",
+    },
+    right: {
+      text: "Drum & Bass",
+      stats: { ace: +5, ulb: 0, sponsors: 0, cercles: +5 },
+      next: "8d5f36a5-17bb-4518-ae5c-4ef5e838cfa1",
+    },
+  },
+
+  // Post St V
+  {
+    id: "8d5f36a5-17bb-4518-ae5c-4ef5e838cfa1",
+    uri: require('../assets/img/story/8d5f36a5-17bb-4518-ae5c-4ef5e838cfa1.png'),
+    title: "Post St V",
+    description: "Le lendemain de la St V, tu te rends compte que tu as vraiment déconné la veille. Malgré cela,aujourd’hui, tu décides de prendre une grande décision très importante pour ton mandat …",
+    left: {
+      text: "WC",
+      stats: { ace: +5, ulb: 0, sponsors: -2, cercles: 0 },
+      next: "0e178bab-4034-467e-bab1-846f364836b9",
+    },
+    right: {
+      text: "Aquarius",
+      stats: { ace: +5, ulb: 0, sponsors: +5, cercles: 0 },
+      next: "0e178bab-4034-467e-bab1-846f364836b9",
+    },
+  },
+
+  // Fumer en jefke
+  {
+    id: "0e178bab-4034-467e-bab1-846f364836b9",
+    uri: require('../assets/img/story/0e178bab-4034-467e-bab1-846f364836b9.png'),
+    title: "Fumer en Jefke",
+    description: "Un agent de sécurité anonyme met la pression à l’ULB quand aux fumeurs passifs en Jefke et au fait que cela est interdit depuis la création de la Jefke. Que faire ?",
+    left: {
+      text: "Continuer de fumer",
+      stats: { ace: -10, ulb: -10, sponsors: 0, cercles: +5 },
+      next: "c27b907e-560e-48e5-888e-5883a432e09b",
+    },
+    right: {
+      text: "Interdire de fumer",
+      stats: { ace: +10, ulb: +10, sponsors: 0, cercles: -5 },
+      next: "c27b907e-560e-48e5-888e-5883a432e09b",
+    },
+  },
+
+  // TD Ecocup bis
+  {
+    id: "c27b907e-560e-48e5-888e-5883a432e09b",
+    uri: require('../assets/img/story/c27b907e-560e-48e5-888e-5883a432e09b.png'),
+    title: "TD Ecocup Now !",
+    description: "Il est temps de se lancer sur un premier TD Ecocups. Cependant, il y a des risques de perdre beaucoup d’argent. Il faut montrer l’exemple. Ne serait-ce pas une bonne occasion pour l’ACE de se mettre en avant ou faudrait-il encore laisser le CP être la vedette ?",
+    left: {
+      text: "TD Ecocups avec l'ACE",
+      stats: { ace: +10, ulb: +5, sponsors: 0, cercles: +5 },
+      next: "f523b4df-316c-43dc-a244-d8e4fbd02a28",
+    },
+    right: {
+      text: "TD Ecocups par le CP",
+      stats: { ace: -10, ulb: +5, sponsors: 0, cercles: +5 },
+      next: "f523b4df-316c-43dc-a244-d8e4fbd02a28",
+    },
+  },
+
+  // Boissons Énergisante bis
+  {
+    id: "f523b4df-316c-43dc-a244-d8e4fbd02a28",
+    uri: require('../assets/img/story/f523b4df-316c-43dc-a244-d8e4fbd02a28.png'),
+    title: "Boissons Énergisante bis ",
+    description: " L’ULB interdit de vendre des boissons énergisantes dans les cercles. Cependant, tu te dis que cela pourrait être une alternative à la consommation d’alcool. Vaut-il mieux pousser l'ULB à changer sa politique ou vendre des bières allégées est-il suffisant ?",
+    left: {
+      text: "Pousser l’ULB ",
+      stats: { ace: +5, ulb: -10, sponsors: +10, cercles: +5 },
+      next: "",
+    },
+    right: {
+      text: "Bières allégées",
+      stats: { ace: -5, ulb: +5, sponsors: +5, cercles: +5 },
+      next: "",
+    },
+  },
+
+  // Boissons Énergisante bis
+  {
+    id: "f523b4df-316c-43dc-a244-d8e4fbd02a28",
+    uri: require('../assets/img/story/f523b4df-316c-43dc-a244-d8e4fbd02a28.png'),
+    title: "Boissons Énergisante bis ",
+    description: " L’ULB interdit de vendre des boissons énergisantes dans les cercles. Cependant, tu te dis que cela pourrait être une alternative à la consommation d’alcool. Vaut-il mieux pousser l'ULB à changer sa politique ou vendre des bières allégées est-il suffisant ?",
+    left: {
+      text: "Pousser l’ULB ",
+      stats: { ace: +5, ulb: -10, sponsors: +10, cercles: +5 },
+      next: "6b418c9b-6b4a-46fe-8c35-18d42e88168c",
+    },
+    right: {
+      text: "Bières allégées",
+      stats: { ace: -5, ulb: +5, sponsors: +5, cercles: -5 },
+      next: "6b418c9b-6b4a-46fe-8c35-18d42e88168c",
+    },
+  },
+
+  // Rachat Penne
+  {
+    id: "6b418c9b-6b4a-46fe-8c35-18d42e88168c",
+    uri: require('../assets/img/story/6b418c9b-6b4a-46fe-8c35-18d42e88168c.png'),
+    title: "Boissons Énergisante bis ",
+    description: "Un bleu fraîchement baptisé a retrouvé ta penne en TD. Celle-ci valant 2 fûts, il te propose un rachat digne de ce nom. Tu hésites aussi à la récupérer à l'aide d'une technique secrète ...",
+    left: {
+      text: "Rachat ",
+      stats: { ace: +5, ulb: 0, sponsors: 0, cercles: +5 },
+      next: "d53ad706-77f5-4544-ad0b-cd1eb5264cef",
+    },
+    right: {
+      text: "Pas de Rachat",
+      stats: { ace: -5, ulb: 0, sponsors: 0, cercles: -10 },
+      next: "d53ad706-77f5-4544-ad0b-cd1eb5264cef",
+    },
+  },
+
+  // Décors St V
+  {
+    id: "d53ad706-77f5-4544-ad0b-cd1eb5264cef",
+    uri: require('../assets/img/story/d53ad706-77f5-4544-ad0b-cd1eb5264cef.png'),
+    title: "Décors St V",
+    description: "Il faut décider des décors que nous afficherons sur les chars de la St V. Une idée survient, noter le numéro de gsm privé du bourgmestre de la ville de Bruxelles pour dénoncer son inaction au détriment du harcèlement de ce dernier. Mettre le numéro de Roger te parait aussi être une bonne idée ... ",
+    left: {
+      text: "Bourgmestre ",
+      stats: { ace: -10, ulb: -10, sponsors: -5, cercles: +5 },
+      next: "74cf4232-57fa-4bb6-8b38-46c0efffd2bc",
+    },
+    right: {
+      text: "Roger",
+      stats: { ace: +5, ulb: 0, sponsors: 0, cercles: +10 },
+      next: "74cf4232-57fa-4bb6-8b38-46c0efffd2bc",
+    },
+  },
+
+  // Affaire Roger
+  {
+    id: "74cf4232-57fa-4bb6-8b38-46c0efffd2bc",
+    uri: require('../assets/img/story/74cf4232-57fa-4bb6-8b38-46c0efffd2bc.png'),
+    title: "Affaire Roger",
+    description: "Une fois encore, nous avons eu des problèmes avec les pennes des bleu.ette.s 2019 au niveau du prix exigé et de la qualité de couture. De plus, des présidents de cercle s'en sont plaints avec insistance en réunion. Que faire avec Roger ?",
+    left: {
+      text: "le Soudoyer avec le fond ACE",
+      stats: { ace: -5, ulb: 0, sponsors: 0, cercles: -10 },
+      next: "",
+    },
+    right: {
+      text: "Changer de fournisseur",
+      stats: { ace: +5, ulb: 0, sponsors: 0, cercles: +10 },
       next: "",
     },
   },
