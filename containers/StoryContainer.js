@@ -355,7 +355,7 @@ const StoryAssets = [
     description: "Le jour de la St-V un cercle se permet de faire un jeu vidéo qui critique nos agissements. Comment réagir ? On laisse tomber parce que ça fait partie de l'esprit de la St-V ou on s'en prend à eux, c'est vrai qu'ils vont pas réussir à tenir longtemps",
     left: {
       text: "Laisser tomber",
-      stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +25 },
+      stats: { ace: +5, ulb: -5, sponsors: -5, cercles: +10 },
       next: "0eeebd60-a784-4c31-9d85-4759932e6ad1",
     },
     right: {
@@ -366,7 +366,9 @@ const StoryAssets = [
   },
   // UPDATE 2019 
 
-    // location litigieuse
+  
+
+    // location litigieuse                            
   {
     id: "0eeebd60-a784-4c31-9d85-4759932e6ad1",
     uri: require('../assets/img/story/0eeebd60-a784-4c31-9d85-4759932e6ad1.png'),
@@ -375,10 +377,28 @@ const StoryAssets = [
     left: {
       text: "Accuser les EDD",
       stats: { ace: +10, ulb: +5, sponsors: -5, cercles: +25 },
-      next: "72e2faaa-a1e0-4856-a189-aa6cca1dca95",
+      next: "72d85da9-1d6a-4df8-bc6e-06379b3749df",
     },
     right: {
       text: "Dénoncer les Gastériens",
+      stats: { ace: -5, ulb: +10, sponsors: -5, cercles: +10 },
+      next: "72d85da9-1d6a-4df8-bc6e-06379b3749df",
+    },
+  },
+
+  // St V avec des chars
+  {
+    id: "72d85da9-1d6a-4df8-bc6e-06379b3749df",
+    uri: require('../assets/img/story/72d85da9-1d6a-4df8-bc6e-06379b3749df.png'),
+    title: "St V avec des chars ?",
+    description: "Comme chaque année, certains cercles aimeraient revoir les chars à la St V supprimés suite au niveau de l'Etat d'alerte du pays. D'une part, les étudiants rappellent que c'est la tradition, d'autre part, les réticents vis à vis de cette idée rajoutent que “avec un stand on boit plus”.",
+    left: {
+      text: "Avec Chars",
+      stats: { ace: +5, ulb: +5, sponsors: -5, cercles: +25 },
+      next: "72e2faaa-a1e0-4856-a189-aa6cca1dca95",
+    },
+    right: {
+      text: "Sans Chars",
       stats: { ace: -5, ulb: +10, sponsors: -5, cercles: +10 },
       next: "72e2faaa-a1e0-4856-a189-aa6cca1dca95",
     },
@@ -607,7 +627,7 @@ const StoryAssets = [
     id: "d53ad706-77f5-4544-ad0b-cd1eb5264cef",
     uri: require('../assets/img/story/d53ad706-77f5-4544-ad0b-cd1eb5264cef.png'),
     title: "Décors St V",
-    description: "Il faut décider des décors que nous afficherons sur les chars de la St V. Une idée survient, noter le numéro de gsm privé du bourgmestre de la ville de Bruxelles pour dénoncer son inaction au détriment du harcèlement de ce dernier. Mettre le numéro de Roger te parait aussi être une bonne idée ... ",
+    description: "Il faut décider des décors concernant les chars de la St V. Une idée a plus de succès que les autres : afficher le numéro de gsm privé du bourgmestre de la ville de Bruxelles pour dénoncer son inaction au détriment du harcèlement de ce dernier. Mettre le numéro de Roger te parait aussi être une bonne idée ... ",
     left: {
       text: "Bourgmestre ",
       stats: { ace: -10, ulb: -10, sponsors: -5, cercles: +5 },
@@ -625,14 +645,14 @@ const StoryAssets = [
     id: "74cf4232-57fa-4bb6-8b38-46c0efffd2bc",
     uri: require('../assets/img/story/74cf4232-57fa-4bb6-8b38-46c0efffd2bc.png'),
     title: "Affaire Roger",
-    description: "Une fois encore, nous avons eu des problèmes avec les pennes des bleu.ette.s 2019 au niveau du prix exigé et de la qualité de couture. De plus, des présidents de cercle s'en sont plaints avec insistance en réunion. Que faire avec Roger ?",
+    description: "Une fois encore, nous avons eu des problèmes avec les pennes des bleu.ette.s 2019 au niveau du prix exigé et de la qualité de couture. De plus, des présidents de cercle s'en sont plaints avec insistance en réunion. Que faire avec Roger ? Passer à la calotte ou le soudoyer avec le fond ACE ?",
     left: {
-      text: "le Soudoyer avec le fond ACE",
+      text: "Calotte",
       stats: { ace: -5, ulb: 0, sponsors: 0, cercles: -10 },
       next: "",
     },
     right: {
-      text: "Changer de fournisseur",
+      text: "Sodoyer",
       stats: { ace: +5, ulb: 0, sponsors: 0, cercles: +10 },
       next: "",
     },
