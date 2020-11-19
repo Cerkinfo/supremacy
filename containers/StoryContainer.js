@@ -371,7 +371,7 @@ const StoryAssets = [
     // location litigieuse                            
   {
     id: "0eeebd60-a784-4c31-9d85-4759932e6ad1",
-    uri: require('../assets/img/story/0eeebd60-a784-4c31-9d85-4759932e6ad1.png'),
+    uri: require('../assets/img/story/5c816152-51c8-42cf-b13e-259687b27fc6.png'),
     title: "Location Litigieuse",
     description: "Un Ordre louant un cercle pour une soirée a déféqué dans un frigo de Oxedos et fracassé la porte d’entrée du dit cercle .... Que faire pour leur rendre justice ?",
     left: {
@@ -386,7 +386,7 @@ const StoryAssets = [
     },
   },
 
-  // St V avec des chars
+  // St V avec des chars IMAGE
   {
     id: "72d85da9-1d6a-4df8-bc6e-06379b3749df",
     uri: require('../assets/img/story/72d85da9-1d6a-4df8-bc6e-06379b3749df.png'),
@@ -408,7 +408,7 @@ const StoryAssets = [
   // Sol Glissant en Jefke
   {
     id: "72e2faaa-a1e0-4856-a189-aa6cca1dca95",
-    uri: require('../assets/img/story/72e2faaa-a1e0-4856-a189-aa6cca1dca95.png'),
+    uri: require('../assets/img/story/fb69ab49-ac7d-4c1f-ae95-8bfee9fda8e5.png'),
     title: "Sol Glissant en Jefke",
     description: "Des étudiants se sont blessées dans les WC de la Jefke. En effet, le sol devenu glissant suite à l'utilisation répétée. On vous répète que cela est dangereux pour le bien de tous mais que pour le réparer il faudrait attendre la période creuse sans TD pour éviter d'empêcher les festivités. Que faites -vous ?",
     left: {
@@ -423,7 +423,7 @@ const StoryAssets = [
     },
   },
 
-  // Blues in distress
+  // Blues in distress IMAGE
   {
     id: "6fa04fbb-e21e-40c5-b7b2-1034e50ec4d1",
     uri: require('../assets/img/story/6fa04fbb-e21e-40c5-b7b2-1034e50ec4d1.png'),
@@ -445,7 +445,7 @@ const StoryAssets = [
   // Chasse à la baleine
   {
     id: "89d6c5b1-0740-4376-9f79-440c4276de52",
-    uri: require('../assets/img/story/89d6c5b1-0740-4376-9f79-440c4276de52.png'),
+    uri: require('../assets/img/story/fb11b484-df6c-40fc-81e3-c7e0a19a4acc.png'),
     title: "Chasse à la baleine",
     description: "Suite aux importants travaux d’aménagement à côté de la Jefke pour faciliter l’accès à la future maison de retraite, les autorités de l’ULB décident d'aplatir la baleine. Étant un repère pour beaucoup d’étudiants, tu dois te positionner vis à vis de sa suppression.",
     left: {
@@ -460,10 +460,10 @@ const StoryAssets = [
     },
   },
 
-  // Buffalo
+  // Buffalo 
   {
     id: "b85ffa0f-ca47-4300-ad97-db020fb3588c",
-    uri: require('../assets/img/story/b85ffa0f-ca47-4300-ad97-db020fb3588c.png'),
+    uri: require('../assets/img/story/bae44100-4a01-423a-9fec-b133b2312cd4.png'),
     title: "Buffalo",
     description: "Étant assez éreinté par ton rôle de président du décide d’aller en TD pour te changer les idées … À peine après t’être servi un verre, un pote voulant t’attirer dans un traquenard te crie “Buffalo” !",
     left: {
@@ -481,7 +481,7 @@ const StoryAssets = [
   // Sur le chemin d’Erasme 
   {
     id: "961f8721-6cf6-460d-b630-1fe4cffb0ccf",
-    uri: require('../assets/img/story/961f8721-6cf6-460d-b630-1fe4cffb0ccf.png'),
+    uri: require('../assets/img/story/86d3b209-9047-49cb-b8ae-44d364e0f4aa.png'),
     title: "Sur le chemin d’Erasme",
     description: "Un étudiant du pôle santé (Erasme) intéressé à faire son baptême te demande de localiser le cercle le plus musclé de l'ULB. En tant que bon président, tu ... ",
     left: {
@@ -499,7 +499,7 @@ const StoryAssets = [
   // Musique en Jefke
   {
     id: "047f4745-e2e6-4e49-9a7f-a3136a4d100e",
-    uri: require('../assets/img/story/047f4745-e2e6-4e49-9a7f-a3136a4d100e.png'),
+    uri: require('../assets/img/story/9ce10db3-ac07-4271-8e79-53c5b5939d09.png'),
     title: "Musique en Jefke",
     description: "En réunion ACE, un président de cercle se plaint de la musique redondante en Jefke. Il voudrait y apporter du folklore propre à son cercle…  ",
     left: {
@@ -517,7 +517,7 @@ const StoryAssets = [
   // Post St V
   {
     id: "8d5f36a5-17bb-4518-ae5c-4ef5e838cfa1",
-    uri: require('../assets/img/story/8d5f36a5-17bb-4518-ae5c-4ef5e838cfa1.png'),
+    uri: require('../assets/img/story/c4ed8cc5-5d75-439a-b4c6-e6075e0fdb5b.png'),
     title: "Post St V",
     description: "Le lendemain de la St V, tu te rends compte que tu as vraiment déconné la veille. Malgré cela,aujourd’hui, tu décides de prendre une grande décision très importante pour ton mandat …",
     left: {
@@ -535,7 +535,7 @@ const StoryAssets = [
   // Fumer en jefke
   {
     id: "0e178bab-4034-467e-bab1-846f364836b9",
-    uri: require('../assets/img/story/0e178bab-4034-467e-bab1-846f364836b9.png'),
+    uri: require('../assets/img/story/59dbd69a-ea2a-4ead-8739-6e084a223bd5.png'),
     title: "Fumer en Jefke",
     description: "Un agent de sécurité anonyme met la pression à l’ULB quand aux fumeurs passifs en Jefke et au fait que cela est interdit depuis la création de la Jefke. Que faire ?",
     left: {
@@ -550,7 +550,7 @@ const StoryAssets = [
     },
   },
 
-  // TD Ecocup bis
+  // TD Ecocup bis IMAGE
   {
     id: "c27b907e-560e-48e5-888e-5883a432e09b",
     uri: require('../assets/img/story/c27b907e-560e-48e5-888e-5883a432e09b.png'),
@@ -568,25 +568,8 @@ const StoryAssets = [
     },
   },
 
-  // Boissons Énergisante bis
-  {
-    id: "f523b4df-316c-43dc-a244-d8e4fbd02a28",
-    uri: require('../assets/img/story/f523b4df-316c-43dc-a244-d8e4fbd02a28.png'),
-    title: "Boissons Énergisante bis ",
-    description: " L’ULB interdit de vendre des boissons énergisantes dans les cercles. Cependant, tu te dis que cela pourrait être une alternative à la consommation d’alcool. Vaut-il mieux pousser l'ULB à changer sa politique ou vendre des bières allégées est-il suffisant ?",
-    left: {
-      text: "Pousser l’ULB ",
-      stats: { ace: +5, ulb: -10, sponsors: +10, cercles: +5 },
-      next: "",
-    },
-    right: {
-      text: "Bières allégées",
-      stats: { ace: -5, ulb: +5, sponsors: +5, cercles: +5 },
-      next: "",
-    },
-  },
 
-  // Boissons Énergisante bis
+  // Boissons Énergisante bis IMAGE
   {
     id: "f523b4df-316c-43dc-a244-d8e4fbd02a28",
     uri: require('../assets/img/story/f523b4df-316c-43dc-a244-d8e4fbd02a28.png'),
@@ -604,10 +587,10 @@ const StoryAssets = [
     },
   },
 
-  // Rachat Penne
+  // Rachat Penne IMAGE
   {
     id: "6b418c9b-6b4a-46fe-8c35-18d42e88168c",
-    uri: require('../assets/img/story/6b418c9b-6b4a-46fe-8c35-18d42e88168c.png'),
+    uri: require('../assets/img/story/1.jpg'),
     title: "Boissons Énergisante bis ",
     description: "Un bleu fraîchement baptisé a retrouvé ta penne en TD. Celle-ci valant 2 fûts, il te propose un rachat digne de ce nom. Tu hésites aussi à la récupérer à l'aide d'une technique secrète ...",
     left: {
@@ -622,7 +605,7 @@ const StoryAssets = [
     },
   },
 
-  // Décors St V
+  // Décors St V IMAGE
   {
     id: "d53ad706-77f5-4544-ad0b-cd1eb5264cef",
     uri: require('../assets/img/story/d53ad706-77f5-4544-ad0b-cd1eb5264cef.png'),
