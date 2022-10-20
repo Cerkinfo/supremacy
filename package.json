@@ -9,7 +9,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^30.0.1",
+    "expo": "^46.0.16",
     "expo-react-native-adapter": "^1.2.0",
     "grpc": "^1.24.2",
     "native-base": "^2.8.1",
